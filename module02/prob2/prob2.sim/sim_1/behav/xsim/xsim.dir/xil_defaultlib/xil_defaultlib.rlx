@@ -1,0 +1,17 @@
+0.7
+2020.2
+Nov 18 2020
+09:20:35
+/home/mr-robot/Documents/arch/module02/prob2/prob2.sim/sim_1/behav/xsim/glbl.v,1605673889,verilog,,,,glbl,,,,,,,,
+/home/mr-robot/Documents/arch/module02/source-code/v/add1.v,1439936308,verilog,,/home/mr-robot/Documents/arch/module02/source-code/v/add1_tb.v,,add1,,,,,,,,
+/home/mr-robot/Documents/arch/module02/source-code/v/add1_tb.v,1439936290,verilog,,,,add1_tb,,,,,,,,
+/home/mr-robot/Documents/arch/module02/source-code/v/counter_6.v,1439936292,verilog,,/home/mr-robot/Documents/arch/module02/source-code/v/counter_6_tb.v,,counter_6,,,,,,,,
+/home/mr-robot/Documents/arch/module02/source-code/v/counter_6_tb.v,1439936294,verilog,,,,counter_6_tb,,,,,,,,
+/home/mr-robot/Documents/arch/module02/source-code/v/d_ff.v,1439936290,verilog,,/home/mr-robot/Documents/arch/module02/source-code/v/d_ff_tb.v,,d_ff,,,,,,,,
+/home/mr-robot/Documents/arch/module02/source-code/v/d_ff_tb.v,1439936300,verilog,,,,d_ff_tb,,,,,,,,
+/home/mr-robot/Documents/arch/module02/source-code/v/d_flip_flop.v,1439936294,verilog,,/home/mr-robot/Documents/arch/module02/source-code/v/d_flip_flop_tb.v,,d_flip_flop,,,,,,,,
+/home/mr-robot/Documents/arch/module02/source-code/v/d_flip_flop_tb.v,1439936304,verilog,,,,d_flip_flop_tb,,,,,,,,
+/home/mr-robot/Documents/arch/module02/source-code/v/shift.v,1439936298,verilog,,/home/mr-robot/Documents/arch/module02/source-code/v/shift_tb.v,,shift,,,,,,,,
+/home/mr-robot/Documents/arch/module02/source-code/v/shift_tb.v,1439936308,verilog,,,,shift_tb,,,,,,,,
+/home/mr-robot/Documents/arch/module02/source-code/v/time_counter_verilog.v,1439936286,verilog,,/home/mr-robot/Documents/arch/module02/source-code/v/time_counter_verilog_tb.v,,time_counter_verilog,,,,,,,,
+/home/mr-robot/Documents/arch/module02/source-code/v/time_counter_verilog_tb.v,1439936288,verilog,,,,time_counter_verilog_tb,,,,,,,,

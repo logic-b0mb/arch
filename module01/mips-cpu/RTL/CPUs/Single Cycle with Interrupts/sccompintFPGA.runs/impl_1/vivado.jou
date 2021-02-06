@@ -1,0 +1,12 @@
+#-----------------------------------------------------------
+# Vivado v2020.2 (64-bit)
+# SW Build 3064766 on Wed Nov 18 09:12:47 MST 2020
+# IP Build 3064653 on Wed Nov 18 14:17:31 MST 2020
+# Start of session at: Tue Jan 26 18:55:04 2021
+# Process ID: 90309
+# Current directory: /home/mr-robot/Documents/arch/module01/mips-cpu/RTL/CPUs/Single Cycle with Interrupts/sccompintFPGA.runs/impl_1
+# Command line: vivado -log mfp_nexys4_ddr.vdi -applog -product Vivado -messageDb vivado.pb -mode batch -source mfp_nexys4_ddr.tcl -notrace
+# Log file: /home/mr-robot/Documents/arch/module01/mips-cpu/RTL/CPUs/Single Cycle with Interrupts/sccompintFPGA.runs/impl_1/mfp_nexys4_ddr.vdi
+# Journal file: /home/mr-robot/Documents/arch/module01/mips-cpu/RTL/CPUs/Single Cycle with Interrupts/sccompintFPGA.runs/impl_1/vivado.jou
+#-----------------------------------------------------------
+source mfp_nexys4_ddr.tcl -notrace

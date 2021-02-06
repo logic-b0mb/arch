@@ -1,0 +1,805 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<wave_config>
+   <wave_state>
+   </wave_state>
+   <db_ref_list>
+      <db_ref path="sc_interrupt_tb_behav.wdb" id="1">
+         <top_modules>
+            <top_module name="glbl" />
+            <top_module name="sc_interrupt_tb" />
+         </top_modules>
+      </db_ref>
+   </db_ref_list>
+   <zoom_setting>
+      <ZoomStartTime time="275050fs"></ZoomStartTime>
+      <ZoomEndTime time="410336fs"></ZoomEndTime>
+      <Cursor1Time time="6800fs"></Cursor1Time>
+   </zoom_setting>
+   <column_width_setting>
+      <NameColumnWidth column_width="174"></NameColumnWidth>
+      <ValueColumnWidth column_width="106"></ValueColumnWidth>
+   </column_width_setting>
+   <WVObjectSize size="195" />
+   <wvobject type="logic" fp_name="/sc_interrupt_tb/clk">
+      <obj_property name="ElementShortName">clk</obj_property>
+      <obj_property name="ObjectShortName">clk</obj_property>
+   </wvobject>
+   <wvobject type="logic" fp_name="/sc_interrupt_tb/clrn">
+      <obj_property name="ElementShortName">clrn</obj_property>
+      <obj_property name="ObjectShortName">clrn</obj_property>
+   </wvobject>
+   <wvobject type="logic" fp_name="/sc_interrupt_tb/memclk">
+      <obj_property name="ElementShortName">memclk</obj_property>
+      <obj_property name="ObjectShortName">memclk</obj_property>
+   </wvobject>
+   <wvobject type="logic" fp_name="/sc_interrupt_tb/intr">
+      <obj_property name="ElementShortName">intr</obj_property>
+      <obj_property name="ObjectShortName">intr</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/sc_interrupt_tb/inst">
+      <obj_property name="ElementShortName">inst[31:0]</obj_property>
+      <obj_property name="ObjectShortName">inst[31:0]</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/sc_interrupt_tb/pc">
+      <obj_property name="ElementShortName">pc[31:0]</obj_property>
+      <obj_property name="ObjectShortName">pc[31:0]</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/sc_interrupt_tb/aluout">
+      <obj_property name="ElementShortName">aluout[31:0]</obj_property>
+      <obj_property name="ObjectShortName">aluout[31:0]</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/sc_interrupt_tb/memout">
+      <obj_property name="ElementShortName">memout[31:0]</obj_property>
+      <obj_property name="ObjectShortName">memout[31:0]</obj_property>
+   </wvobject>
+   <wvobject type="logic" fp_name="/sc_interrupt_tb/inta">
+      <obj_property name="ElementShortName">inta</obj_property>
+      <obj_property name="ObjectShortName">inta</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/sc_interrupt_tb/IO_Switch">
+      <obj_property name="ElementShortName">IO_Switch[15:0]</obj_property>
+      <obj_property name="ObjectShortName">IO_Switch[15:0]</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/sc_interrupt_tb/IO_PB">
+      <obj_property name="ElementShortName">IO_PB[4:0]</obj_property>
+      <obj_property name="ObjectShortName">IO_PB[4:0]</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/sc_interrupt_tb/IO_LED">
+      <obj_property name="ElementShortName">IO_LED[15:0]</obj_property>
+      <obj_property name="ObjectShortName">IO_LED[15:0]</obj_property>
+   </wvobject>
+   <wvobject type="logic" fp_name="/sc_interrupt_tb/UART_RX">
+      <obj_property name="ElementShortName">UART_RX</obj_property>
+      <obj_property name="ObjectShortName">UART_RX</obj_property>
+   </wvobject>
+   <wvobject type="logic" fp_name="/sc_interrupt_tb/scint_sys/SI_ClkIn">
+      <obj_property name="ElementShortName">SI_ClkIn</obj_property>
+      <obj_property name="ObjectShortName">SI_ClkIn</obj_property>
+   </wvobject>
+   <wvobject type="logic" fp_name="/sc_interrupt_tb/scint_sys/SI_Reset_N">
+      <obj_property name="ElementShortName">SI_Reset_N</obj_property>
+      <obj_property name="ObjectShortName">SI_Reset_N</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/sc_interrupt_tb/scint_sys/inst">
+      <obj_property name="ElementShortName">inst[31:0]</obj_property>
+      <obj_property name="ObjectShortName">inst[31:0]</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/sc_interrupt_tb/scint_sys/pc">
+      <obj_property name="ElementShortName">pc[31:0]</obj_property>
+      <obj_property name="ObjectShortName">pc[31:0]</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/sc_interrupt_tb/scint_sys/aluout">
+      <obj_property name="ElementShortName">aluout[31:0]</obj_property>
+      <obj_property name="ObjectShortName">aluout[31:0]</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/sc_interrupt_tb/scint_sys/memout">
+      <obj_property name="ElementShortName">memout[31:0]</obj_property>
+      <obj_property name="ObjectShortName">memout[31:0]</obj_property>
+   </wvobject>
+   <wvobject type="logic" fp_name="/sc_interrupt_tb/scint_sys/memclk">
+      <obj_property name="ElementShortName">memclk</obj_property>
+      <obj_property name="ObjectShortName">memclk</obj_property>
+   </wvobject>
+   <wvobject type="logic" fp_name="/sc_interrupt_tb/scint_sys/intr">
+      <obj_property name="ElementShortName">intr</obj_property>
+      <obj_property name="ObjectShortName">intr</obj_property>
+   </wvobject>
+   <wvobject type="logic" fp_name="/sc_interrupt_tb/scint_sys/inta">
+      <obj_property name="ElementShortName">inta</obj_property>
+      <obj_property name="ObjectShortName">inta</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/sc_interrupt_tb/scint_sys/data_cpu">
+      <obj_property name="ElementShortName">data_cpu[31:0]</obj_property>
+      <obj_property name="ObjectShortName">data_cpu[31:0]</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/sc_interrupt_tb/scint_sys/data_mem">
+      <obj_property name="ElementShortName">data_mem[31:0]</obj_property>
+      <obj_property name="ObjectShortName">data_mem[31:0]</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/sc_interrupt_tb/scint_sys/data_gpio">
+      <obj_property name="ElementShortName">data_gpio[31:0]</obj_property>
+      <obj_property name="ObjectShortName">data_gpio[31:0]</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/sc_interrupt_tb/scint_sys/data">
+      <obj_property name="ElementShortName">data[31:0]</obj_property>
+      <obj_property name="ObjectShortName">data[31:0]</obj_property>
+   </wvobject>
+   <wvobject type="logic" fp_name="/sc_interrupt_tb/scint_sys/wmem">
+      <obj_property name="ElementShortName">wmem</obj_property>
+      <obj_property name="ObjectShortName">wmem</obj_property>
+   </wvobject>
+   <wvobject type="logic" fp_name="/sc_interrupt_tb/scint_sys/clk">
+      <obj_property name="ElementShortName">clk</obj_property>
+      <obj_property name="ObjectShortName">clk</obj_property>
+   </wvobject>
+   <wvobject type="logic" fp_name="/sc_interrupt_tb/scint_sys/clrn">
+      <obj_property name="ElementShortName">clrn</obj_property>
+      <obj_property name="ObjectShortName">clrn</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/sc_interrupt_tb/scint_sys/HSEL">
+      <obj_property name="ElementShortName">HSEL[2:0]</obj_property>
+      <obj_property name="ObjectShortName">HSEL[2:0]</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/sc_interrupt_tb/scint_sys/sccomp_decoder/HADDR">
+      <obj_property name="ElementShortName">HADDR[31:0]</obj_property>
+      <obj_property name="ObjectShortName">HADDR[31:0]</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/sc_interrupt_tb/scint_sys/sccomp_decoder/HSEL">
+      <obj_property name="ElementShortName">HSEL[2:0]</obj_property>
+      <obj_property name="ObjectShortName">HSEL[2:0]</obj_property>
+   </wvobject>
+   <wvobject type="logic" fp_name="/sc_interrupt_tb/scint_sys/gpio/clk">
+      <obj_property name="ElementShortName">clk</obj_property>
+      <obj_property name="ObjectShortName">clk</obj_property>
+   </wvobject>
+   <wvobject type="logic" fp_name="/sc_interrupt_tb/scint_sys/gpio/clrn">
+      <obj_property name="ElementShortName">clrn</obj_property>
+      <obj_property name="ObjectShortName">clrn</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/sc_interrupt_tb/scint_sys/gpio/dataout">
+      <obj_property name="ElementShortName">dataout[31:0]</obj_property>
+      <obj_property name="ObjectShortName">dataout[31:0]</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/sc_interrupt_tb/scint_sys/gpio/datain">
+      <obj_property name="ElementShortName">datain[31:0]</obj_property>
+      <obj_property name="ObjectShortName">datain[31:0]</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/sc_interrupt_tb/scint_sys/gpio/haddr">
+      <obj_property name="ElementShortName">haddr[3:0]</obj_property>
+      <obj_property name="ObjectShortName">haddr[3:0]</obj_property>
+   </wvobject>
+   <wvobject type="logic" fp_name="/sc_interrupt_tb/scint_sys/gpio/we">
+      <obj_property name="ElementShortName">we</obj_property>
+      <obj_property name="ObjectShortName">we</obj_property>
+   </wvobject>
+   <wvobject type="logic" fp_name="/sc_interrupt_tb/scint_sys/gpio/HSEL">
+      <obj_property name="ElementShortName">HSEL</obj_property>
+      <obj_property name="ObjectShortName">HSEL</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/sc_interrupt_tb/scint_sys/gpio/IO_Switch">
+      <obj_property name="ElementShortName">IO_Switch[15:0]</obj_property>
+      <obj_property name="ObjectShortName">IO_Switch[15:0]</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/sc_interrupt_tb/scint_sys/gpio/IO_PB">
+      <obj_property name="ElementShortName">IO_PB[4:0]</obj_property>
+      <obj_property name="ObjectShortName">IO_PB[4:0]</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/sc_interrupt_tb/scint_sys/gpio/IO_LED">
+      <obj_property name="ElementShortName">IO_LED[15:0]</obj_property>
+      <obj_property name="ObjectShortName">IO_LED[15:0]</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/sc_interrupt_tb/scint_sys/gpio/HADDR_d">
+      <obj_property name="ElementShortName">HADDR_d[3:0]</obj_property>
+      <obj_property name="ObjectShortName">HADDR_d[3:0]</obj_property>
+   </wvobject>
+   <wvobject type="logic" fp_name="/sc_interrupt_tb/scint_sys/gpio/HWRITE_d">
+      <obj_property name="ElementShortName">HWRITE_d</obj_property>
+      <obj_property name="ObjectShortName">HWRITE_d</obj_property>
+   </wvobject>
+   <wvobject type="logic" fp_name="/sc_interrupt_tb/scint_sys/gpio/HSEL_d">
+      <obj_property name="ElementShortName">HSEL_d</obj_property>
+      <obj_property name="ObjectShortName">HSEL_d</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/sc_interrupt_tb/scint_sys/gpio/HTRANS_d">
+      <obj_property name="ElementShortName">HTRANS_d[1:0]</obj_property>
+      <obj_property name="ObjectShortName">HTRANS_d[1:0]</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/sc_interrupt_tb/scint_sys/gpio/datain_d">
+      <obj_property name="ElementShortName">datain_d[31:0]</obj_property>
+      <obj_property name="ObjectShortName">datain_d[31:0]</obj_property>
+   </wvobject>
+   <wvobject type="logic" fp_name="/sc_interrupt_tb/scint_sys/gpio/wes">
+      <obj_property name="ElementShortName">wes</obj_property>
+      <obj_property name="ObjectShortName">wes</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/sc_interrupt_tb/scint_sys/cpu/inst">
+      <obj_property name="ElementShortName">inst[31:0]</obj_property>
+      <obj_property name="ObjectShortName">inst[31:0]</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/sc_interrupt_tb/scint_sys/cpu/mem">
+      <obj_property name="ElementShortName">mem[31:0]</obj_property>
+      <obj_property name="ObjectShortName">mem[31:0]</obj_property>
+   </wvobject>
+   <wvobject type="logic" fp_name="/sc_interrupt_tb/scint_sys/cpu/intr">
+      <obj_property name="ElementShortName">intr</obj_property>
+      <obj_property name="ObjectShortName">intr</obj_property>
+   </wvobject>
+   <wvobject type="logic" fp_name="/sc_interrupt_tb/scint_sys/cpu/clk">
+      <obj_property name="ElementShortName">clk</obj_property>
+      <obj_property name="ObjectShortName">clk</obj_property>
+   </wvobject>
+   <wvobject type="logic" fp_name="/sc_interrupt_tb/scint_sys/cpu/clrn">
+      <obj_property name="ElementShortName">clrn</obj_property>
+      <obj_property name="ObjectShortName">clrn</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/sc_interrupt_tb/scint_sys/cpu/pc">
+      <obj_property name="ElementShortName">pc[31:0]</obj_property>
+      <obj_property name="ObjectShortName">pc[31:0]</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/sc_interrupt_tb/scint_sys/cpu/alu">
+      <obj_property name="ElementShortName">alu[31:0]</obj_property>
+      <obj_property name="ObjectShortName">alu[31:0]</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/sc_interrupt_tb/scint_sys/cpu/data">
+      <obj_property name="ElementShortName">data[31:0]</obj_property>
+      <obj_property name="ObjectShortName">data[31:0]</obj_property>
+   </wvobject>
+   <wvobject type="logic" fp_name="/sc_interrupt_tb/scint_sys/cpu/wmem">
+      <obj_property name="ElementShortName">wmem</obj_property>
+      <obj_property name="ObjectShortName">wmem</obj_property>
+   </wvobject>
+   <wvobject type="logic" fp_name="/sc_interrupt_tb/scint_sys/cpu/inta">
+      <obj_property name="ElementShortName">inta</obj_property>
+      <obj_property name="ObjectShortName">inta</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/sc_interrupt_tb/scint_sys/cpu/op">
+      <obj_property name="ElementShortName">op[5:0]</obj_property>
+      <obj_property name="ObjectShortName">op[5:0]</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/sc_interrupt_tb/scint_sys/cpu/rs">
+      <obj_property name="ElementShortName">rs[4:0]</obj_property>
+      <obj_property name="ObjectShortName">rs[4:0]</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/sc_interrupt_tb/scint_sys/cpu/rt">
+      <obj_property name="ElementShortName">rt[4:0]</obj_property>
+      <obj_property name="ObjectShortName">rt[4:0]</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/sc_interrupt_tb/scint_sys/cpu/rd">
+      <obj_property name="ElementShortName">rd[4:0]</obj_property>
+      <obj_property name="ObjectShortName">rd[4:0]</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/sc_interrupt_tb/scint_sys/cpu/func">
+      <obj_property name="ElementShortName">func[5:0]</obj_property>
+      <obj_property name="ObjectShortName">func[5:0]</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/sc_interrupt_tb/scint_sys/cpu/imm">
+      <obj_property name="ElementShortName">imm[15:0]</obj_property>
+      <obj_property name="ObjectShortName">imm[15:0]</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/sc_interrupt_tb/scint_sys/cpu/addr">
+      <obj_property name="ElementShortName">addr[25:0]</obj_property>
+      <obj_property name="ObjectShortName">addr[25:0]</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/sc_interrupt_tb/scint_sys/cpu/aluc">
+      <obj_property name="ElementShortName">aluc[3:0]</obj_property>
+      <obj_property name="ObjectShortName">aluc[3:0]</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/sc_interrupt_tb/scint_sys/cpu/pcsrc">
+      <obj_property name="ElementShortName">pcsrc[1:0]</obj_property>
+      <obj_property name="ObjectShortName">pcsrc[1:0]</obj_property>
+   </wvobject>
+   <wvobject type="logic" fp_name="/sc_interrupt_tb/scint_sys/cpu/wreg">
+      <obj_property name="ElementShortName">wreg</obj_property>
+      <obj_property name="ObjectShortName">wreg</obj_property>
+   </wvobject>
+   <wvobject type="logic" fp_name="/sc_interrupt_tb/scint_sys/cpu/regrt">
+      <obj_property name="ElementShortName">regrt</obj_property>
+      <obj_property name="ObjectShortName">regrt</obj_property>
+   </wvobject>
+   <wvobject type="logic" fp_name="/sc_interrupt_tb/scint_sys/cpu/m2reg">
+      <obj_property name="ElementShortName">m2reg</obj_property>
+      <obj_property name="ObjectShortName">m2reg</obj_property>
+   </wvobject>
+   <wvobject type="logic" fp_name="/sc_interrupt_tb/scint_sys/cpu/shift">
+      <obj_property name="ElementShortName">shift</obj_property>
+      <obj_property name="ObjectShortName">shift</obj_property>
+   </wvobject>
+   <wvobject type="logic" fp_name="/sc_interrupt_tb/scint_sys/cpu/aluimm">
+      <obj_property name="ElementShortName">aluimm</obj_property>
+      <obj_property name="ObjectShortName">aluimm</obj_property>
+   </wvobject>
+   <wvobject type="logic" fp_name="/sc_interrupt_tb/scint_sys/cpu/jal">
+      <obj_property name="ElementShortName">jal</obj_property>
+      <obj_property name="ObjectShortName">jal</obj_property>
+   </wvobject>
+   <wvobject type="logic" fp_name="/sc_interrupt_tb/scint_sys/cpu/sext">
+      <obj_property name="ElementShortName">sext</obj_property>
+      <obj_property name="ObjectShortName">sext</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/sc_interrupt_tb/scint_sys/cpu/mfc0">
+      <obj_property name="ElementShortName">mfc0[1:0]</obj_property>
+      <obj_property name="ObjectShortName">mfc0[1:0]</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/sc_interrupt_tb/scint_sys/cpu/selpc">
+      <obj_property name="ElementShortName">selpc[1:0]</obj_property>
+      <obj_property name="ObjectShortName">selpc[1:0]</obj_property>
+   </wvobject>
+   <wvobject type="logic" fp_name="/sc_interrupt_tb/scint_sys/cpu/v">
+      <obj_property name="ElementShortName">v</obj_property>
+      <obj_property name="ObjectShortName">v</obj_property>
+   </wvobject>
+   <wvobject type="logic" fp_name="/sc_interrupt_tb/scint_sys/cpu/exc">
+      <obj_property name="ElementShortName">exc</obj_property>
+      <obj_property name="ObjectShortName">exc</obj_property>
+   </wvobject>
+   <wvobject type="logic" fp_name="/sc_interrupt_tb/scint_sys/cpu/wsta">
+      <obj_property name="ElementShortName">wsta</obj_property>
+      <obj_property name="ObjectShortName">wsta</obj_property>
+   </wvobject>
+   <wvobject type="logic" fp_name="/sc_interrupt_tb/scint_sys/cpu/wcau">
+      <obj_property name="ElementShortName">wcau</obj_property>
+      <obj_property name="ObjectShortName">wcau</obj_property>
+   </wvobject>
+   <wvobject type="logic" fp_name="/sc_interrupt_tb/scint_sys/cpu/wepc">
+      <obj_property name="ElementShortName">wepc</obj_property>
+      <obj_property name="ObjectShortName">wepc</obj_property>
+   </wvobject>
+   <wvobject type="logic" fp_name="/sc_interrupt_tb/scint_sys/cpu/mtc0">
+      <obj_property name="ElementShortName">mtc0</obj_property>
+      <obj_property name="ObjectShortName">mtc0</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/sc_interrupt_tb/scint_sys/cpu/p4">
+      <obj_property name="ElementShortName">p4[31:0]</obj_property>
+      <obj_property name="ObjectShortName">p4[31:0]</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/sc_interrupt_tb/scint_sys/cpu/bpc">
+      <obj_property name="ElementShortName">bpc[31:0]</obj_property>
+      <obj_property name="ObjectShortName">bpc[31:0]</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/sc_interrupt_tb/scint_sys/cpu/npc">
+      <obj_property name="ElementShortName">npc[31:0]</obj_property>
+      <obj_property name="ObjectShortName">npc[31:0]</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/sc_interrupt_tb/scint_sys/cpu/qa">
+      <obj_property name="ElementShortName">qa[31:0]</obj_property>
+      <obj_property name="ObjectShortName">qa[31:0]</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/sc_interrupt_tb/scint_sys/cpu/qb">
+      <obj_property name="ElementShortName">qb[31:0]</obj_property>
+      <obj_property name="ObjectShortName">qb[31:0]</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/sc_interrupt_tb/scint_sys/cpu/alua">
+      <obj_property name="ElementShortName">alua[31:0]</obj_property>
+      <obj_property name="ObjectShortName">alua[31:0]</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/sc_interrupt_tb/scint_sys/cpu/alub">
+      <obj_property name="ElementShortName">alub[31:0]</obj_property>
+      <obj_property name="ObjectShortName">alub[31:0]</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/sc_interrupt_tb/scint_sys/cpu/wd">
+      <obj_property name="ElementShortName">wd[31:0]</obj_property>
+      <obj_property name="ObjectShortName">wd[31:0]</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/sc_interrupt_tb/scint_sys/cpu/r">
+      <obj_property name="ElementShortName">r[31:0]</obj_property>
+      <obj_property name="ObjectShortName">r[31:0]</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/sc_interrupt_tb/scint_sys/cpu/sa">
+      <obj_property name="ElementShortName">sa[31:0]</obj_property>
+      <obj_property name="ObjectShortName">sa[31:0]</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/sc_interrupt_tb/scint_sys/cpu/s16">
+      <obj_property name="ElementShortName">s16[15:0]</obj_property>
+      <obj_property name="ObjectShortName">s16[15:0]</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/sc_interrupt_tb/scint_sys/cpu/i32">
+      <obj_property name="ElementShortName">i32[31:0]</obj_property>
+      <obj_property name="ObjectShortName">i32[31:0]</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/sc_interrupt_tb/scint_sys/cpu/dis">
+      <obj_property name="ElementShortName">dis[31:0]</obj_property>
+      <obj_property name="ObjectShortName">dis[31:0]</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/sc_interrupt_tb/scint_sys/cpu/jpc">
+      <obj_property name="ElementShortName">jpc[31:0]</obj_property>
+      <obj_property name="ObjectShortName">jpc[31:0]</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/sc_interrupt_tb/scint_sys/cpu/reg_dest">
+      <obj_property name="ElementShortName">reg_dest[4:0]</obj_property>
+      <obj_property name="ObjectShortName">reg_dest[4:0]</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/sc_interrupt_tb/scint_sys/cpu/wn">
+      <obj_property name="ElementShortName">wn[4:0]</obj_property>
+      <obj_property name="ObjectShortName">wn[4:0]</obj_property>
+   </wvobject>
+   <wvobject type="logic" fp_name="/sc_interrupt_tb/scint_sys/cpu/z">
+      <obj_property name="ElementShortName">z</obj_property>
+      <obj_property name="ObjectShortName">z</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/sc_interrupt_tb/scint_sys/cpu/sta">
+      <obj_property name="ElementShortName">sta[31:0]</obj_property>
+      <obj_property name="ObjectShortName">sta[31:0]</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/sc_interrupt_tb/scint_sys/cpu/cau">
+      <obj_property name="ElementShortName">cau[31:0]</obj_property>
+      <obj_property name="ObjectShortName">cau[31:0]</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/sc_interrupt_tb/scint_sys/cpu/epc">
+      <obj_property name="ElementShortName">epc[31:0]</obj_property>
+      <obj_property name="ObjectShortName">epc[31:0]</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/sc_interrupt_tb/scint_sys/cpu/sta_in">
+      <obj_property name="ElementShortName">sta_in[31:0]</obj_property>
+      <obj_property name="ObjectShortName">sta_in[31:0]</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/sc_interrupt_tb/scint_sys/cpu/cau_in">
+      <obj_property name="ElementShortName">cau_in[31:0]</obj_property>
+      <obj_property name="ObjectShortName">cau_in[31:0]</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/sc_interrupt_tb/scint_sys/cpu/epc_in">
+      <obj_property name="ElementShortName">epc_in[31:0]</obj_property>
+      <obj_property name="ObjectShortName">epc_in[31:0]</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/sc_interrupt_tb/scint_sys/cpu/sta_lr">
+      <obj_property name="ElementShortName">sta_lr[31:0]</obj_property>
+      <obj_property name="ObjectShortName">sta_lr[31:0]</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/sc_interrupt_tb/scint_sys/cpu/pc_npc">
+      <obj_property name="ElementShortName">pc_npc[31:0]</obj_property>
+      <obj_property name="ObjectShortName">pc_npc[31:0]</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/sc_interrupt_tb/scint_sys/cpu/cause">
+      <obj_property name="ElementShortName">cause[31:0]</obj_property>
+      <obj_property name="ObjectShortName">cause[31:0]</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/sc_interrupt_tb/scint_sys/cpu/res_c0">
+      <obj_property name="ElementShortName">res_c0[31:0]</obj_property>
+      <obj_property name="ObjectShortName">res_c0[31:0]</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/sc_interrupt_tb/scint_sys/cpu/n_pc">
+      <obj_property name="ElementShortName">n_pc[31:0]</obj_property>
+      <obj_property name="ObjectShortName">n_pc[31:0]</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/sc_interrupt_tb/scint_sys/cpu/sta_r">
+      <obj_property name="ElementShortName">sta_r[31:0]</obj_property>
+      <obj_property name="ObjectShortName">sta_r[31:0]</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/sc_interrupt_tb/scint_sys/cpu/sta_l">
+      <obj_property name="ElementShortName">sta_l[31:0]</obj_property>
+      <obj_property name="ObjectShortName">sta_l[31:0]</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/sc_interrupt_tb/scint_sys/cpu/BASE">
+      <obj_property name="ElementShortName">BASE[31:0]</obj_property>
+      <obj_property name="ObjectShortName">BASE[31:0]</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/sc_interrupt_tb/scint_sys/cpu/ZERO">
+      <obj_property name="ElementShortName">ZERO[31:0]</obj_property>
+      <obj_property name="ObjectShortName">ZERO[31:0]</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/sc_interrupt_tb/scint_sys/cpu/rf/d">
+      <obj_property name="ElementShortName">d[31:0]</obj_property>
+      <obj_property name="ObjectShortName">d[31:0]</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/sc_interrupt_tb/scint_sys/cpu/rf/rna">
+      <obj_property name="ElementShortName">rna[4:0]</obj_property>
+      <obj_property name="ObjectShortName">rna[4:0]</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/sc_interrupt_tb/scint_sys/cpu/rf/rnb">
+      <obj_property name="ElementShortName">rnb[4:0]</obj_property>
+      <obj_property name="ObjectShortName">rnb[4:0]</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/sc_interrupt_tb/scint_sys/cpu/rf/wn">
+      <obj_property name="ElementShortName">wn[4:0]</obj_property>
+      <obj_property name="ObjectShortName">wn[4:0]</obj_property>
+   </wvobject>
+   <wvobject type="logic" fp_name="/sc_interrupt_tb/scint_sys/cpu/rf/we">
+      <obj_property name="ElementShortName">we</obj_property>
+      <obj_property name="ObjectShortName">we</obj_property>
+   </wvobject>
+   <wvobject type="logic" fp_name="/sc_interrupt_tb/scint_sys/cpu/rf/clk">
+      <obj_property name="ElementShortName">clk</obj_property>
+      <obj_property name="ObjectShortName">clk</obj_property>
+   </wvobject>
+   <wvobject type="logic" fp_name="/sc_interrupt_tb/scint_sys/cpu/rf/clrn">
+      <obj_property name="ElementShortName">clrn</obj_property>
+      <obj_property name="ObjectShortName">clrn</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/sc_interrupt_tb/scint_sys/cpu/rf/qa">
+      <obj_property name="ElementShortName">qa[31:0]</obj_property>
+      <obj_property name="ObjectShortName">qa[31:0]</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/sc_interrupt_tb/scint_sys/cpu/rf/qb">
+      <obj_property name="ElementShortName">qb[31:0]</obj_property>
+      <obj_property name="ObjectShortName">qb[31:0]</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/sc_interrupt_tb/scint_sys/cpu/rf/register">
+      <obj_property name="ElementShortName">register[1:31][31:0]</obj_property>
+      <obj_property name="ObjectShortName">register[1:31][31:0]</obj_property>
+      <obj_property name="isExpanded"></obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/sc_interrupt_tb/scint_sys/cpu/rf/i">
+      <obj_property name="ElementShortName">i[31:0]</obj_property>
+      <obj_property name="ObjectShortName">i[31:0]</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/sc_interrupt_tb/JC">
+      <obj_property name="ElementShortName">JC[10:1]</obj_property>
+      <obj_property name="ObjectShortName">JC[10:1]</obj_property>
+      <obj_property name="isExpanded"></obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/sc_interrupt_tb/scint_sys/gpio/SPIdata">
+      <obj_property name="ElementShortName">SPIdata[7:0]</obj_property>
+      <obj_property name="ObjectShortName">SPIdata[7:0]</obj_property>
+   </wvobject>
+   <wvobject type="logic" fp_name="/sc_interrupt_tb/scint_sys/gpio/SPIcmdb">
+      <obj_property name="ElementShortName">SPIcmdb</obj_property>
+      <obj_property name="ObjectShortName">SPIcmdb</obj_property>
+   </wvobject>
+   <wvobject type="logic" fp_name="/sc_interrupt_tb/scint_sys/gpio/SPIsend">
+      <obj_property name="ElementShortName">SPIsend</obj_property>
+      <obj_property name="ObjectShortName">SPIsend</obj_property>
+   </wvobject>
+   <wvobject type="logic" fp_name="/sc_interrupt_tb/scint_sys/gpio/SPIdone">
+      <obj_property name="ElementShortName">SPIdone</obj_property>
+      <obj_property name="ObjectShortName">SPIdone</obj_property>
+   </wvobject>
+   <wvobject type="logic" fp_name="/sc_interrupt_tb/scint_sys/gpio/rgb_spi/i_Rst_L">
+      <obj_property name="ElementShortName">i_Rst_L</obj_property>
+      <obj_property name="ObjectShortName">i_Rst_L</obj_property>
+   </wvobject>
+   <wvobject type="logic" fp_name="/sc_interrupt_tb/scint_sys/gpio/rgb_spi/i_Clk">
+      <obj_property name="ElementShortName">i_Clk</obj_property>
+      <obj_property name="ObjectShortName">i_Clk</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/sc_interrupt_tb/scint_sys/gpio/rgb_spi/i_TX_Byte">
+      <obj_property name="ElementShortName">i_TX_Byte[7:0]</obj_property>
+      <obj_property name="ObjectShortName">i_TX_Byte[7:0]</obj_property>
+   </wvobject>
+   <wvobject type="logic" fp_name="/sc_interrupt_tb/scint_sys/gpio/rgb_spi/i_TX_DV">
+      <obj_property name="ElementShortName">i_TX_DV</obj_property>
+      <obj_property name="ObjectShortName">i_TX_DV</obj_property>
+   </wvobject>
+   <wvobject type="logic" fp_name="/sc_interrupt_tb/scint_sys/gpio/rgb_spi/o_TX_Ready">
+      <obj_property name="ElementShortName">o_TX_Ready</obj_property>
+      <obj_property name="ObjectShortName">o_TX_Ready</obj_property>
+   </wvobject>
+   <wvobject type="logic" fp_name="/sc_interrupt_tb/scint_sys/gpio/rgb_spi/o_RX_DV">
+      <obj_property name="ElementShortName">o_RX_DV</obj_property>
+      <obj_property name="ObjectShortName">o_RX_DV</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/sc_interrupt_tb/scint_sys/gpio/rgb_spi/o_RX_Byte">
+      <obj_property name="ElementShortName">o_RX_Byte[7:0]</obj_property>
+      <obj_property name="ObjectShortName">o_RX_Byte[7:0]</obj_property>
+   </wvobject>
+   <wvobject type="logic" fp_name="/sc_interrupt_tb/scint_sys/gpio/rgb_spi/o_SPI_Clk">
+      <obj_property name="ElementShortName">o_SPI_Clk</obj_property>
+      <obj_property name="ObjectShortName">o_SPI_Clk</obj_property>
+   </wvobject>
+   <wvobject type="logic" fp_name="/sc_interrupt_tb/scint_sys/gpio/rgb_spi/i_SPI_MISO">
+      <obj_property name="ElementShortName">i_SPI_MISO</obj_property>
+      <obj_property name="ObjectShortName">i_SPI_MISO</obj_property>
+   </wvobject>
+   <wvobject type="logic" fp_name="/sc_interrupt_tb/scint_sys/gpio/rgb_spi/o_SPI_MOSI">
+      <obj_property name="ElementShortName">o_SPI_MOSI</obj_property>
+      <obj_property name="ObjectShortName">o_SPI_MOSI</obj_property>
+   </wvobject>
+   <wvobject type="logic" fp_name="/sc_interrupt_tb/scint_sys/gpio/rgb_spi/w_CPOL">
+      <obj_property name="ElementShortName">w_CPOL</obj_property>
+      <obj_property name="ObjectShortName">w_CPOL</obj_property>
+   </wvobject>
+   <wvobject type="logic" fp_name="/sc_interrupt_tb/scint_sys/gpio/rgb_spi/w_CPHA">
+      <obj_property name="ElementShortName">w_CPHA</obj_property>
+      <obj_property name="ObjectShortName">w_CPHA</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/sc_interrupt_tb/scint_sys/gpio/rgb_spi/r_SPI_Clk_Count">
+      <obj_property name="ElementShortName">r_SPI_Clk_Count[2:0]</obj_property>
+      <obj_property name="ObjectShortName">r_SPI_Clk_Count[2:0]</obj_property>
+   </wvobject>
+   <wvobject type="logic" fp_name="/sc_interrupt_tb/scint_sys/gpio/rgb_spi/r_SPI_Clk">
+      <obj_property name="ElementShortName">r_SPI_Clk</obj_property>
+      <obj_property name="ObjectShortName">r_SPI_Clk</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/sc_interrupt_tb/scint_sys/gpio/rgb_spi/r_SPI_Clk_Edges">
+      <obj_property name="ElementShortName">r_SPI_Clk_Edges[4:0]</obj_property>
+      <obj_property name="ObjectShortName">r_SPI_Clk_Edges[4:0]</obj_property>
+   </wvobject>
+   <wvobject type="logic" fp_name="/sc_interrupt_tb/scint_sys/gpio/rgb_spi/r_Leading_Edge">
+      <obj_property name="ElementShortName">r_Leading_Edge</obj_property>
+      <obj_property name="ObjectShortName">r_Leading_Edge</obj_property>
+   </wvobject>
+   <wvobject type="logic" fp_name="/sc_interrupt_tb/scint_sys/gpio/rgb_spi/r_Trailing_Edge">
+      <obj_property name="ElementShortName">r_Trailing_Edge</obj_property>
+      <obj_property name="ObjectShortName">r_Trailing_Edge</obj_property>
+   </wvobject>
+   <wvobject type="logic" fp_name="/sc_interrupt_tb/scint_sys/gpio/rgb_spi/r_TX_DV">
+      <obj_property name="ElementShortName">r_TX_DV</obj_property>
+      <obj_property name="ObjectShortName">r_TX_DV</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/sc_interrupt_tb/scint_sys/gpio/rgb_spi/r_TX_Byte">
+      <obj_property name="ElementShortName">r_TX_Byte[7:0]</obj_property>
+      <obj_property name="ObjectShortName">r_TX_Byte[7:0]</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/sc_interrupt_tb/scint_sys/gpio/rgb_spi/r_RX_Bit_Count">
+      <obj_property name="ElementShortName">r_RX_Bit_Count[2:0]</obj_property>
+      <obj_property name="ObjectShortName">r_RX_Bit_Count[2:0]</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/sc_interrupt_tb/scint_sys/gpio/rgb_spi/r_TX_Bit_Count">
+      <obj_property name="ElementShortName">r_TX_Bit_Count[2:0]</obj_property>
+      <obj_property name="ObjectShortName">r_TX_Bit_Count[2:0]</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/sc_interrupt_tb/scint_sys/gpio/rgb_spi/SPI_MODE">
+      <obj_property name="ElementShortName">SPI_MODE[31:0]</obj_property>
+      <obj_property name="ObjectShortName">SPI_MODE[31:0]</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/sc_interrupt_tb/scint_sys/gpio/rgb_spi/CLKS_PER_HALF_BIT">
+      <obj_property name="ElementShortName">CLKS_PER_HALF_BIT[31:0]</obj_property>
+      <obj_property name="ObjectShortName">CLKS_PER_HALF_BIT[31:0]</obj_property>
+   </wvobject>
+   <wvobject type="logic" fp_name="/sc_interrupt_tb/scint_sys/gpio/clk">
+      <obj_property name="ElementShortName">clk</obj_property>
+      <obj_property name="ObjectShortName">clk</obj_property>
+   </wvobject>
+   <wvobject type="logic" fp_name="/sc_interrupt_tb/scint_sys/gpio/clrn">
+      <obj_property name="ElementShortName">clrn</obj_property>
+      <obj_property name="ObjectShortName">clrn</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/sc_interrupt_tb/scint_sys/gpio/dataout">
+      <obj_property name="ElementShortName">dataout[31:0]</obj_property>
+      <obj_property name="ObjectShortName">dataout[31:0]</obj_property>
+   </wvobject>
+   <wvobject type="logic" fp_name="/sc_interrupt_tb/scint_sys/gpio/dataout_ready">
+      <obj_property name="ElementShortName">dataout_ready</obj_property>
+      <obj_property name="ObjectShortName">dataout_ready</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/sc_interrupt_tb/scint_sys/gpio/datain">
+      <obj_property name="ElementShortName">datain[31:0]</obj_property>
+      <obj_property name="ObjectShortName">datain[31:0]</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/sc_interrupt_tb/scint_sys/gpio/haddr">
+      <obj_property name="ElementShortName">haddr[3:0]</obj_property>
+      <obj_property name="ObjectShortName">haddr[3:0]</obj_property>
+   </wvobject>
+   <wvobject type="logic" fp_name="/sc_interrupt_tb/scint_sys/gpio/we">
+      <obj_property name="ElementShortName">we</obj_property>
+      <obj_property name="ObjectShortName">we</obj_property>
+   </wvobject>
+   <wvobject type="logic" fp_name="/sc_interrupt_tb/scint_sys/gpio/HSEL">
+      <obj_property name="ElementShortName">HSEL</obj_property>
+      <obj_property name="ObjectShortName">HSEL</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/sc_interrupt_tb/scint_sys/gpio/IO_Switch">
+      <obj_property name="ElementShortName">IO_Switch[15:0]</obj_property>
+      <obj_property name="ObjectShortName">IO_Switch[15:0]</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/sc_interrupt_tb/scint_sys/gpio/IO_PB">
+      <obj_property name="ElementShortName">IO_PB[4:0]</obj_property>
+      <obj_property name="ObjectShortName">IO_PB[4:0]</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/sc_interrupt_tb/scint_sys/gpio/IO_LED">
+      <obj_property name="ElementShortName">IO_LED[15:0]</obj_property>
+      <obj_property name="ObjectShortName">IO_LED[15:0]</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/sc_interrupt_tb/scint_sys/gpio/IO_7SEGEN_N">
+      <obj_property name="ElementShortName">IO_7SEGEN_N[7:0]</obj_property>
+      <obj_property name="ObjectShortName">IO_7SEGEN_N[7:0]</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/sc_interrupt_tb/scint_sys/gpio/IO_7SEG_N">
+      <obj_property name="ElementShortName">IO_7SEG_N[6:0]</obj_property>
+      <obj_property name="ObjectShortName">IO_7SEG_N[6:0]</obj_property>
+   </wvobject>
+   <wvobject type="logic" fp_name="/sc_interrupt_tb/scint_sys/gpio/IO_BUZZ">
+      <obj_property name="ElementShortName">IO_BUZZ</obj_property>
+      <obj_property name="ObjectShortName">IO_BUZZ</obj_property>
+   </wvobject>
+   <wvobject type="logic" fp_name="/sc_interrupt_tb/scint_sys/gpio/IO_RGB_SPI_MOSI">
+      <obj_property name="ElementShortName">IO_RGB_SPI_MOSI</obj_property>
+      <obj_property name="ObjectShortName">IO_RGB_SPI_MOSI</obj_property>
+   </wvobject>
+   <wvobject type="logic" fp_name="/sc_interrupt_tb/scint_sys/gpio/IO_RGB_SPI_SCK">
+      <obj_property name="ElementShortName">IO_RGB_SPI_SCK</obj_property>
+      <obj_property name="ObjectShortName">IO_RGB_SPI_SCK</obj_property>
+   </wvobject>
+   <wvobject type="logic" fp_name="/sc_interrupt_tb/scint_sys/gpio/IO_RGB_SPI_CS">
+      <obj_property name="ElementShortName">IO_RGB_SPI_CS</obj_property>
+      <obj_property name="ObjectShortName">IO_RGB_SPI_CS</obj_property>
+   </wvobject>
+   <wvobject type="logic" fp_name="/sc_interrupt_tb/scint_sys/gpio/IO_RGB_DC">
+      <obj_property name="ElementShortName">IO_RGB_DC</obj_property>
+      <obj_property name="ObjectShortName">IO_RGB_DC</obj_property>
+   </wvobject>
+   <wvobject type="logic" fp_name="/sc_interrupt_tb/scint_sys/gpio/IO_RGB_RST">
+      <obj_property name="ElementShortName">IO_RGB_RST</obj_property>
+      <obj_property name="ObjectShortName">IO_RGB_RST</obj_property>
+   </wvobject>
+   <wvobject type="logic" fp_name="/sc_interrupt_tb/scint_sys/gpio/IO_RGB_VCC_EN">
+      <obj_property name="ElementShortName">IO_RGB_VCC_EN</obj_property>
+      <obj_property name="ObjectShortName">IO_RGB_VCC_EN</obj_property>
+   </wvobject>
+   <wvobject type="logic" fp_name="/sc_interrupt_tb/scint_sys/gpio/IO_RGB_PEN">
+      <obj_property name="ElementShortName">IO_RGB_PEN</obj_property>
+      <obj_property name="ObjectShortName">IO_RGB_PEN</obj_property>
+   </wvobject>
+   <wvobject type="logic" fp_name="/sc_interrupt_tb/scint_sys/gpio/IO_CS">
+      <obj_property name="ElementShortName">IO_CS</obj_property>
+      <obj_property name="ObjectShortName">IO_CS</obj_property>
+   </wvobject>
+   <wvobject type="logic" fp_name="/sc_interrupt_tb/scint_sys/gpio/IO_SCK">
+      <obj_property name="ElementShortName">IO_SCK</obj_property>
+      <obj_property name="ObjectShortName">IO_SCK</obj_property>
+   </wvobject>
+   <wvobject type="logic" fp_name="/sc_interrupt_tb/scint_sys/gpio/IO_SDO">
+      <obj_property name="ElementShortName">IO_SDO</obj_property>
+      <obj_property name="ObjectShortName">IO_SDO</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/sc_interrupt_tb/scint_sys/gpio/segments">
+      <obj_property name="ElementShortName">segments[6:0]</obj_property>
+      <obj_property name="ObjectShortName">segments[6:0]</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/sc_interrupt_tb/scint_sys/gpio/SEGEN_N">
+      <obj_property name="ElementShortName">SEGEN_N[7:0]</obj_property>
+      <obj_property name="ObjectShortName">SEGEN_N[7:0]</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/sc_interrupt_tb/scint_sys/gpio/SEGDIGITS_N">
+      <obj_property name="ElementShortName">SEGDIGITS_N[31:0]</obj_property>
+      <obj_property name="ObjectShortName">SEGDIGITS_N[31:0]</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/sc_interrupt_tb/scint_sys/gpio/millis">
+      <obj_property name="ElementShortName">millis[31:0]</obj_property>
+      <obj_property name="ObjectShortName">millis[31:0]</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/sc_interrupt_tb/scint_sys/gpio/buzzerMicros">
+      <obj_property name="ElementShortName">buzzerMicros[31:0]</obj_property>
+      <obj_property name="ObjectShortName">buzzerMicros[31:0]</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/sc_interrupt_tb/scint_sys/gpio/SPIdata">
+      <obj_property name="ElementShortName">SPIdata[7:0]</obj_property>
+      <obj_property name="ObjectShortName">SPIdata[7:0]</obj_property>
+   </wvobject>
+   <wvobject type="logic" fp_name="/sc_interrupt_tb/scint_sys/gpio/SPIcmdb">
+      <obj_property name="ElementShortName">SPIcmdb</obj_property>
+      <obj_property name="ObjectShortName">SPIcmdb</obj_property>
+   </wvobject>
+   <wvobject type="logic" fp_name="/sc_interrupt_tb/scint_sys/gpio/SPIsend">
+      <obj_property name="ElementShortName">SPIsend</obj_property>
+      <obj_property name="ObjectShortName">SPIsend</obj_property>
+   </wvobject>
+   <wvobject type="logic" fp_name="/sc_interrupt_tb/scint_sys/gpio/SPIdone">
+      <obj_property name="ElementShortName">SPIdone</obj_property>
+      <obj_property name="ObjectShortName">SPIdone</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/sc_interrupt_tb/scint_sys/gpio/PMOD_value">
+      <obj_property name="ElementShortName">PMOD_value[15:0]</obj_property>
+      <obj_property name="ObjectShortName">PMOD_value[15:0]</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/sc_interrupt_tb/scint_sys/gpio/HADDR_d">
+      <obj_property name="ElementShortName">HADDR_d[3:0]</obj_property>
+      <obj_property name="ObjectShortName">HADDR_d[3:0]</obj_property>
+   </wvobject>
+   <wvobject type="logic" fp_name="/sc_interrupt_tb/scint_sys/gpio/HWRITE_d">
+      <obj_property name="ElementShortName">HWRITE_d</obj_property>
+      <obj_property name="ObjectShortName">HWRITE_d</obj_property>
+   </wvobject>
+   <wvobject type="logic" fp_name="/sc_interrupt_tb/scint_sys/gpio/HSEL_d">
+      <obj_property name="ElementShortName">HSEL_d</obj_property>
+      <obj_property name="ObjectShortName">HSEL_d</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/sc_interrupt_tb/scint_sys/gpio/HTRANS_d">
+      <obj_property name="ElementShortName">HTRANS_d[1:0]</obj_property>
+      <obj_property name="ObjectShortName">HTRANS_d[1:0]</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/sc_interrupt_tb/scint_sys/gpio/datain_d">
+      <obj_property name="ElementShortName">datain_d[31:0]</obj_property>
+      <obj_property name="ObjectShortName">datain_d[31:0]</obj_property>
+   </wvobject>
+   <wvobject type="logic" fp_name="/sc_interrupt_tb/scint_sys/gpio/wes">
+      <obj_property name="ElementShortName">wes</obj_property>
+      <obj_property name="ObjectShortName">wes</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/sc_interrupt_tb/scint_sys/gpio/IOwait_counter">
+      <obj_property name="ElementShortName">IOwait_counter[3:0]</obj_property>
+      <obj_property name="ObjectShortName">IOwait_counter[3:0]</obj_property>
+   </wvobject>
+   <wvobject type="logic" fp_name="/sc_interrupt_tb/scint_sys/gpio/IOready">
+      <obj_property name="ElementShortName">IOready</obj_property>
+      <obj_property name="ObjectShortName">IOready</obj_property>
+   </wvobject>
+</wave_config>

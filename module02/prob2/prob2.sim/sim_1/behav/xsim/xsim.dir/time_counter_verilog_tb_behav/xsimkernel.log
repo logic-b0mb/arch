@@ -1,0 +1,7 @@
+Running: xsim.dir/time_counter_verilog_tb_behav/xsimk -simmode gui -wdb time_counter_verilog_tb_behav.wdb -simrunnum 0 -socket 39283
+Design successfully loaded
+Design Loading Memory Usage: 33344 KB (Peak: 33464 KB)
+Design Loading CPU Usage: 10 ms
+Simulation completed
+Simulation Memory Usage: 115340 KB (Peak: 172612 KB)
+Simulation CPU Usage: 30 ms

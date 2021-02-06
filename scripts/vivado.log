@@ -1,0 +1,896 @@
+#-----------------------------------------------------------
+# Vivado v2020.2 (64-bit)
+# SW Build 3064766 on Wed Nov 18 09:12:47 MST 2020
+# IP Build 3064653 on Wed Nov 18 14:17:31 MST 2020
+# Start of session at: Fri Feb  5 19:12:54 2021
+# Process ID: 12468
+# Current directory: /home/mr-robot/Documents/arch/scripts
+# Command line: vivado
+# Log file: /home/mr-robot/Documents/arch/scripts/vivado.log
+# Journal file: /home/mr-robot/Documents/arch/scripts/vivado.jou
+#-----------------------------------------------------------
+start_gui
+create_project prob2 /home/mr-robot/Documents/arch/module02/prob2 -part xc7a100tcsg324-1
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1704] No user IP repositories specified
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository '/tools/Xilinx/Vivado/2020.2/data/ip'.
+INFO: [IP_Flow 19-3899] Cannot get the environment domain name variable for the component vendor name. Setting the vendor name to 'user.org'.
+create_project: Time (s): cpu = 00:00:10 ; elapsed = 00:00:07 . Memory (MB): peak = 7275.637 ; gain = 38.023 ; free physical = 111 ; free virtual = 10764
+add_files -norecurse {/home/mr-robot/Documents/arch/module02/source-code/v/d_ff.v /home/mr-robot/Documents/arch/module02/source-code/v/shift.v /home/mr-robot/Documents/arch/module02/source-code/v/jkff.v /home/mr-robot/Documents/arch/module02/source-code/v/mux2x1_gate.v}
+update_compile_order -fileset sources_1
+update_compile_order -fileset sources_1
+set_property SOURCE_SET sources_1 [get_filesets sim_1]
+add_files -fileset sim_1 -norecurse {/home/mr-robot/Documents/arch/module02/source-code/v/shift_tb.v /home/mr-robot/Documents/arch/module02/source-code/v/jkff_tb.v /home/mr-robot/Documents/arch/module02/source-code/v/mux2x1_gate_tb.v /home/mr-robot/Documents/arch/module02/source-code/v/d_ff_tb.v}
+update_compile_order -fileset sim_1
+update_compile_order -fileset sim_1
+set_property top shift_tb [get_filesets sim_1]
+set_property top_lib xil_defaultlib [get_filesets sim_1]
+update_compile_order -fileset sim_1
+launch_simulation
+Command: launch_simulation 
+INFO: [Vivado 12-5682] Launching behavioral simulation in '/home/mr-robot/Documents/arch/module02/prob2/prob2.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-54] Inspecting design source files for 'shift_tb' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in '/home/mr-robot/Documents/arch/module02/prob2/prob2.sim/sim_1/behav/xsim'
+xvlog --incr --relax -prj shift_tb_vlog.prj
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/mr-robot/Documents/arch/module02/source-code/v/shift.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module shift
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/mr-robot/Documents/arch/module02/source-code/v/shift_tb.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module shift_tb
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/mr-robot/Documents/arch/module02/prob2/prob2.sim/sim_1/behav/xsim/glbl.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module glbl
+Waiting for jobs to finish...
+No pending jobs, compilation finished.
+INFO: [USF-XSim-69] 'compile' step finished in '1' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in '/home/mr-robot/Documents/arch/module02/prob2/prob2.sim/sim_1/behav/xsim'
+xelab -wto ebdcaf876f35484eae7d83e5b641519c --incr --debug typical --relax --mt 8 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot shift_tb_behav xil_defaultlib.shift_tb xil_defaultlib.glbl -log elaborate.log
+Vivado Simulator 2020.2
+Copyright 1986-1999, 2001-2020 Xilinx, Inc. All Rights Reserved.
+Running: /tools/Xilinx/Vivado/2020.2/bin/unwrapped/lnx64.o/xelab -wto ebdcaf876f35484eae7d83e5b641519c --incr --debug typical --relax --mt 8 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot shift_tb_behav xil_defaultlib.shift_tb xil_defaultlib.glbl -log elaborate.log 
+Using 8 slave threads.
+Starting static elaboration
+Pass Through NonSizing Optimizer
+Completed static elaboration
+Starting simulation data flow analysis
+WARNING: [XSIM 43-4099] "/home/mr-robot/Documents/arch/module02/source-code/v/shift.v" Line 6. Module shift doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "/home/mr-robot/Documents/arch/module02/source-code/v/shift.v" Line 6. Module shift doesn't have a timescale but at least one module in design has a timescale.
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling module xil_defaultlib.shift
+Compiling module xil_defaultlib.shift_tb
+Compiling module xil_defaultlib.glbl
+Built simulation snapshot shift_tb_behav
+
+****** Webtalk v2020.2 (64-bit)
+  **** SW Build 3064766 on Wed Nov 18 09:12:47 MST 2020
+  **** IP Build 3064653 on Wed Nov 18 14:17:31 MST 2020
+    ** Copyright 1986-2020 Xilinx, Inc. All Rights Reserved.
+
+source /home/mr-robot/Documents/arch/module02/prob2/prob2.sim/sim_1/behav/xsim/xsim.dir/shift_tb_behav/webtalk/xsim_webtalk.tcl -notrace
+INFO: [Common 17-186] '/home/mr-robot/Documents/arch/module02/prob2/prob2.sim/sim_1/behav/xsim/xsim.dir/shift_tb_behav/webtalk/usage_statistics_ext_xsim.xml' has been successfully sent to Xilinx on Fri Feb  5 19:21:37 2021. For additional details about this file, please refer to the WebTalk help file at /tools/Xilinx/Vivado/2020.2/doc/webtalk_introduction.html.
+INFO: [Common 17-206] Exiting Webtalk at Fri Feb  5 19:21:37 2021...
+run_program: Time (s): cpu = 00:00:04 ; elapsed = 00:00:05 . Memory (MB): peak = 7391.699 ; gain = 0.000 ; free physical = 406 ; free virtual = 10804
+INFO: [USF-XSim-69] 'elaborate' step finished in '5' seconds
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in '/home/mr-robot/Documents/arch/module02/prob2/prob2.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "shift_tb_behav -key {Behavioral:sim_1:Functional:shift_tb} -tclbatch {shift_tb.tcl} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Vivado Simulator 2020.2
+Time resolution is 1 ps
+source shift_tb.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run 1000ns
+ 0: right=0 arith=0 d=ff0000ff sa=08 sh=0000ff00
+ 1: right=1 arith=0 d=ff0000ff sa=08 sh=00ff0000
+ 2: right=1 arith=1 d=ff0000ff sa=08 sh=ffff0000
+ 3: right=0 arith=0 d=ff0000ff sa=00 sh=ff0000ff
+$finish called at time : 4 ns : File "/home/mr-robot/Documents/arch/module02/source-code/v/shift_tb.v" Line 18
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'shift_tb_behav' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 1000ns
+launch_simulation: Time (s): cpu = 00:00:10 ; elapsed = 00:00:11 . Memory (MB): peak = 7484.508 ; gain = 92.809 ; free physical = 426 ; free virtual = 10767
+close_sim
+INFO: [Simtcl 6-16] Simulation closed
+close_sim: Time (s): cpu = 00:00:05 ; elapsed = 00:00:05 . Memory (MB): peak = 7484.508 ; gain = 0.000 ; free physical = 455 ; free virtual = 10809
+launch_simulation
+Command: launch_simulation 
+INFO: [Vivado 12-5682] Launching behavioral simulation in '/home/mr-robot/Documents/arch/module02/prob2/prob2.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-54] Inspecting design source files for 'shift_tb' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in '/home/mr-robot/Documents/arch/module02/prob2/prob2.sim/sim_1/behav/xsim'
+xvlog --incr --relax -prj shift_tb_vlog.prj
+Waiting for jobs to finish...
+No pending jobs, compilation finished.
+INFO: [USF-XSim-69] 'compile' step finished in '1' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in '/home/mr-robot/Documents/arch/module02/prob2/prob2.sim/sim_1/behav/xsim'
+xelab -wto ebdcaf876f35484eae7d83e5b641519c --incr --debug typical --relax --mt 8 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot shift_tb_behav xil_defaultlib.shift_tb xil_defaultlib.glbl -log elaborate.log
+Vivado Simulator 2020.2
+Copyright 1986-1999, 2001-2020 Xilinx, Inc. All Rights Reserved.
+Running: /tools/Xilinx/Vivado/2020.2/bin/unwrapped/lnx64.o/xelab -wto ebdcaf876f35484eae7d83e5b641519c --incr --debug typical --relax --mt 8 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot shift_tb_behav xil_defaultlib.shift_tb xil_defaultlib.glbl -log elaborate.log 
+Using 8 slave threads.
+Starting static elaboration
+Pass Through NonSizing Optimizer
+Completed static elaboration
+INFO: [XSIM 43-4323] No Change in HDL. Linking previously generated obj files to create kernel
+INFO: [USF-XSim-69] 'elaborate' step finished in '1' seconds
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in '/home/mr-robot/Documents/arch/module02/prob2/prob2.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "shift_tb_behav -key {Behavioral:sim_1:Functional:shift_tb} -tclbatch {shift_tb.tcl} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Vivado Simulator 2020.2
+Time resolution is 1 ps
+source shift_tb.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run 1000ns
+ 0: right=0 arith=0 d=ff0000ff sa=08 sh=0000ff00
+ 1: right=1 arith=0 d=ff0000ff sa=08 sh=00ff0000
+ 2: right=1 arith=1 d=ff0000ff sa=08 sh=ffff0000
+ 3: right=0 arith=0 d=ff0000ff sa=00 sh=ff0000ff
+$finish called at time : 4 ns : File "/home/mr-robot/Documents/arch/module02/source-code/v/shift_tb.v" Line 18
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'shift_tb_behav' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 1000ns
+launch_simulation: Time (s): cpu = 00:00:06 ; elapsed = 00:00:05 . Memory (MB): peak = 7518.656 ; gain = 34.148 ; free physical = 414 ; free virtual = 10773
+close_sim
+INFO: [Simtcl 6-16] Simulation closed
+set_property SOURCE_SET sources_1 [get_filesets sim_1]
+add_files -fileset sim_1 -norecurse /home/mr-robot/Documents/arch/module02/source-code/v/add1_tb.v
+update_compile_order -fileset sim_1
+add_files -norecurse /home/mr-robot/Documents/arch/module02/source-code/v/add1.v
+update_compile_order -fileset sources_1
+set_property top add1_tb [get_filesets sim_1]
+set_property top_lib xil_defaultlib [get_filesets sim_1]
+update_compile_order -fileset sim_1
+launch_simulation
+Command: launch_simulation 
+INFO: [Vivado 12-5682] Launching behavioral simulation in '/home/mr-robot/Documents/arch/module02/prob2/prob2.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-54] Inspecting design source files for 'add1_tb' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in '/home/mr-robot/Documents/arch/module02/prob2/prob2.sim/sim_1/behav/xsim'
+xvlog --incr --relax -prj add1_tb_vlog.prj
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/mr-robot/Documents/arch/module02/source-code/v/add1.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module add1
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/mr-robot/Documents/arch/module02/source-code/v/add1_tb.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module add1_tb
+Waiting for jobs to finish...
+No pending jobs, compilation finished.
+INFO: [USF-XSim-69] 'compile' step finished in '1' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in '/home/mr-robot/Documents/arch/module02/prob2/prob2.sim/sim_1/behav/xsim'
+xelab -wto ebdcaf876f35484eae7d83e5b641519c --incr --debug typical --relax --mt 8 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot add1_tb_behav xil_defaultlib.add1_tb xil_defaultlib.glbl -log elaborate.log
+Vivado Simulator 2020.2
+Copyright 1986-1999, 2001-2020 Xilinx, Inc. All Rights Reserved.
+Running: /tools/Xilinx/Vivado/2020.2/bin/unwrapped/lnx64.o/xelab -wto ebdcaf876f35484eae7d83e5b641519c --incr --debug typical --relax --mt 8 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot add1_tb_behav xil_defaultlib.add1_tb xil_defaultlib.glbl -log elaborate.log 
+Using 8 slave threads.
+Starting static elaboration
+Pass Through NonSizing Optimizer
+Completed static elaboration
+Starting simulation data flow analysis
+WARNING: [XSIM 43-4099] "/home/mr-robot/Documents/arch/module02/source-code/v/add1.v" Line 6. Module add1 doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "/home/mr-robot/Documents/arch/module02/source-code/v/add1.v" Line 6. Module add1 doesn't have a timescale but at least one module in design has a timescale.
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling module xil_defaultlib.add1
+Compiling module xil_defaultlib.add1_tb
+Compiling module xil_defaultlib.glbl
+Built simulation snapshot add1_tb_behav
+
+****** Webtalk v2020.2 (64-bit)
+  **** SW Build 3064766 on Wed Nov 18 09:12:47 MST 2020
+  **** IP Build 3064653 on Wed Nov 18 14:17:31 MST 2020
+    ** Copyright 1986-2020 Xilinx, Inc. All Rights Reserved.
+
+source /home/mr-robot/Documents/arch/module02/prob2/prob2.sim/sim_1/behav/xsim/xsim.dir/add1_tb_behav/webtalk/xsim_webtalk.tcl -notrace
+INFO: [Common 17-186] '/home/mr-robot/Documents/arch/module02/prob2/prob2.sim/sim_1/behav/xsim/xsim.dir/add1_tb_behav/webtalk/usage_statistics_ext_xsim.xml' has been successfully sent to Xilinx on Fri Feb  5 19:41:06 2021. For additional details about this file, please refer to the WebTalk help file at /tools/Xilinx/Vivado/2020.2/doc/webtalk_introduction.html.
+INFO: [Common 17-206] Exiting Webtalk at Fri Feb  5 19:41:06 2021...
+INFO: [USF-XSim-69] 'elaborate' step finished in '5' seconds
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in '/home/mr-robot/Documents/arch/module02/prob2/prob2.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "add1_tb_behav -key {Behavioral:sim_1:Functional:add1_tb} -tclbatch {add1_tb.tcl} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Vivado Simulator 2020.2
+Time resolution is 1 ps
+source add1_tb.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run 1000ns
+$finish called at time : 8 ns : File "/home/mr-robot/Documents/arch/module02/source-code/v/add1_tb.v" Line 15
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'add1_tb_behav' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 1000ns
+launch_simulation: Time (s): cpu = 00:00:07 ; elapsed = 00:00:09 . Memory (MB): peak = 7587.566 ; gain = 68.910 ; free physical = 446 ; free virtual = 10764
+close_sim
+INFO: [Simtcl 6-16] Simulation closed
+close_sim: Time (s): cpu = 00:00:04 ; elapsed = 00:00:05 . Memory (MB): peak = 7587.566 ; gain = 0.000 ; free physical = 456 ; free virtual = 10769
+add_files -norecurse /home/mr-robot/Documents/arch/module02/source-code/v/time_counter_verilog.v
+update_compile_order -fileset sources_1
+set_property SOURCE_SET sources_1 [get_filesets sim_1]
+add_files -fileset sim_1 -norecurse /home/mr-robot/Documents/arch/module02/source-code/v/time_counter_verilog_tb.v
+update_compile_order -fileset sim_1
+set_property top time_counter_verilog_tb [get_filesets sim_1]
+set_property top_lib xil_defaultlib [get_filesets sim_1]
+update_compile_order -fileset sim_1
+launch_simulation
+Command: launch_simulation 
+INFO: [Vivado 12-5682] Launching behavioral simulation in '/home/mr-robot/Documents/arch/module02/prob2/prob2.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-54] Inspecting design source files for 'time_counter_verilog_tb' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in '/home/mr-robot/Documents/arch/module02/prob2/prob2.sim/sim_1/behav/xsim'
+xvlog --incr --relax -prj time_counter_verilog_tb_vlog.prj
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/mr-robot/Documents/arch/module02/source-code/v/time_counter_verilog.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module time_counter_verilog
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/mr-robot/Documents/arch/module02/source-code/v/time_counter_verilog_tb.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module time_counter_verilog_tb
+Waiting for jobs to finish...
+No pending jobs, compilation finished.
+INFO: [USF-XSim-69] 'compile' step finished in '1' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in '/home/mr-robot/Documents/arch/module02/prob2/prob2.sim/sim_1/behav/xsim'
+xelab -wto ebdcaf876f35484eae7d83e5b641519c --incr --debug typical --relax --mt 8 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot time_counter_verilog_tb_behav xil_defaultlib.time_counter_verilog_tb xil_defaultlib.glbl -log elaborate.log
+Vivado Simulator 2020.2
+Copyright 1986-1999, 2001-2020 Xilinx, Inc. All Rights Reserved.
+Running: /tools/Xilinx/Vivado/2020.2/bin/unwrapped/lnx64.o/xelab -wto ebdcaf876f35484eae7d83e5b641519c --incr --debug typical --relax --mt 8 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot time_counter_verilog_tb_behav xil_defaultlib.time_counter_verilog_tb xil_defaultlib.glbl -log elaborate.log 
+Using 8 slave threads.
+Starting static elaboration
+Pass Through NonSizing Optimizer
+Completed static elaboration
+Starting simulation data flow analysis
+WARNING: [XSIM 43-4099] "/home/mr-robot/Documents/arch/module02/source-code/v/time_counter_verilog.v" Line 6. Module time_counter_verilog doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "/home/mr-robot/Documents/arch/module02/source-code/v/time_counter_verilog.v" Line 6. Module time_counter_verilog doesn't have a timescale but at least one module in design has a timescale.
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling module xil_defaultlib.time_counter_verilog
+Compiling module xil_defaultlib.time_counter_verilog_tb
+Compiling module xil_defaultlib.glbl
+Built simulation snapshot time_counter_verilog_tb_behav
+
+****** Webtalk v2020.2 (64-bit)
+  **** SW Build 3064766 on Wed Nov 18 09:12:47 MST 2020
+  **** IP Build 3064653 on Wed Nov 18 14:17:31 MST 2020
+    ** Copyright 1986-2020 Xilinx, Inc. All Rights Reserved.
+
+source /home/mr-robot/Documents/arch/module02/prob2/prob2.sim/sim_1/behav/xsim/xsim.dir/time_counter_verilog_tb_behav/webtalk/xsim_webtalk.tcl -notrace
+INFO: [Common 17-186] '/home/mr-robot/Documents/arch/module02/prob2/prob2.sim/sim_1/behav/xsim/xsim.dir/time_counter_verilog_tb_behav/webtalk/usage_statistics_ext_xsim.xml' has been successfully sent to Xilinx on Fri Feb  5 19:58:49 2021. For additional details about this file, please refer to the WebTalk help file at /tools/Xilinx/Vivado/2020.2/doc/webtalk_introduction.html.
+INFO: [Common 17-206] Exiting Webtalk at Fri Feb  5 19:58:49 2021...
+INFO: [USF-XSim-69] 'elaborate' step finished in '5' seconds
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in '/home/mr-robot/Documents/arch/module02/prob2/prob2.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "time_counter_verilog_tb_behav -key {Behavioral:sim_1:Functional:time_counter_verilog_tb} -tclbatch {time_counter_verilog_tb.tcl} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Vivado Simulator 2020.2
+Time resolution is 1 ps
+source time_counter_verilog_tb.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run 1000ns
+$finish called at time : 813 ns : File "/home/mr-robot/Documents/arch/module02/source-code/v/time_counter_verilog_tb.v" Line 17
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'time_counter_verilog_tb_behav' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 1000ns
+launch_simulation: Time (s): cpu = 00:00:07 ; elapsed = 00:00:09 . Memory (MB): peak = 7627.578 ; gain = 40.012 ; free physical = 451 ; free virtual = 10762
+close_sim
+INFO: [Simtcl 6-16] Simulation closed
+add_files -norecurse /home/mr-robot/Documents/arch/module02/source-code/v/d_flip_flop.v
+update_compile_order -fileset sources_1
+update_compile_order -fileset sources_1
+set_property SOURCE_SET sources_1 [get_filesets sim_1]
+add_files -fileset sim_1 -norecurse /home/mr-robot/Documents/arch/module02/source-code/v/d_flip_flop_tb.v
+update_compile_order -fileset sim_1
+launch_simulation
+Command: launch_simulation 
+INFO: [Vivado 12-5682] Launching behavioral simulation in '/home/mr-robot/Documents/arch/module02/prob2/prob2.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-54] Inspecting design source files for 'time_counter_verilog_tb' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in '/home/mr-robot/Documents/arch/module02/prob2/prob2.sim/sim_1/behav/xsim'
+xvlog --incr --relax -prj time_counter_verilog_tb_vlog.prj
+Waiting for jobs to finish...
+No pending jobs, compilation finished.
+INFO: [USF-XSim-69] 'compile' step finished in '1' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in '/home/mr-robot/Documents/arch/module02/prob2/prob2.sim/sim_1/behav/xsim'
+xelab -wto ebdcaf876f35484eae7d83e5b641519c --incr --debug typical --relax --mt 8 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot time_counter_verilog_tb_behav xil_defaultlib.time_counter_verilog_tb xil_defaultlib.glbl -log elaborate.log
+Vivado Simulator 2020.2
+Copyright 1986-1999, 2001-2020 Xilinx, Inc. All Rights Reserved.
+Running: /tools/Xilinx/Vivado/2020.2/bin/unwrapped/lnx64.o/xelab -wto ebdcaf876f35484eae7d83e5b641519c --incr --debug typical --relax --mt 8 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot time_counter_verilog_tb_behav xil_defaultlib.time_counter_verilog_tb xil_defaultlib.glbl -log elaborate.log 
+Using 8 slave threads.
+Starting static elaboration
+Pass Through NonSizing Optimizer
+Completed static elaboration
+INFO: [XSIM 43-4323] No Change in HDL. Linking previously generated obj files to create kernel
+INFO: [USF-XSim-69] 'elaborate' step finished in '1' seconds
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in '/home/mr-robot/Documents/arch/module02/prob2/prob2.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "time_counter_verilog_tb_behav -key {Behavioral:sim_1:Functional:time_counter_verilog_tb} -tclbatch {time_counter_verilog_tb.tcl} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Vivado Simulator 2020.2
+Time resolution is 1 ps
+source time_counter_verilog_tb.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run 1000ns
+$finish called at time : 813 ns : File "/home/mr-robot/Documents/arch/module02/source-code/v/time_counter_verilog_tb.v" Line 17
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'time_counter_verilog_tb_behav' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 1000ns
+close_sim
+INFO: [Simtcl 6-16] Simulation closed
+set_property top d_flip_flop_tb [get_filesets sim_1]
+set_property top_lib xil_defaultlib [get_filesets sim_1]
+update_compile_order -fileset sim_1
+launch_simulation
+Command: launch_simulation 
+INFO: [Vivado 12-5682] Launching behavioral simulation in '/home/mr-robot/Documents/arch/module02/prob2/prob2.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-54] Inspecting design source files for 'd_flip_flop_tb' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in '/home/mr-robot/Documents/arch/module02/prob2/prob2.sim/sim_1/behav/xsim'
+xvlog --incr --relax -prj d_flip_flop_tb_vlog.prj
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/mr-robot/Documents/arch/module02/source-code/v/d_flip_flop.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module d_flip_flop
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/mr-robot/Documents/arch/module02/source-code/v/d_flip_flop_tb.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module d_flip_flop_tb
+Waiting for jobs to finish...
+No pending jobs, compilation finished.
+INFO: [USF-XSim-69] 'compile' step finished in '1' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in '/home/mr-robot/Documents/arch/module02/prob2/prob2.sim/sim_1/behav/xsim'
+xelab -wto ebdcaf876f35484eae7d83e5b641519c --incr --debug typical --relax --mt 8 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot d_flip_flop_tb_behav xil_defaultlib.d_flip_flop_tb xil_defaultlib.glbl -log elaborate.log
+Vivado Simulator 2020.2
+Copyright 1986-1999, 2001-2020 Xilinx, Inc. All Rights Reserved.
+Running: /tools/Xilinx/Vivado/2020.2/bin/unwrapped/lnx64.o/xelab -wto ebdcaf876f35484eae7d83e5b641519c --incr --debug typical --relax --mt 8 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot d_flip_flop_tb_behav xil_defaultlib.d_flip_flop_tb xil_defaultlib.glbl -log elaborate.log 
+Using 8 slave threads.
+Starting static elaboration
+Pass Through NonSizing Optimizer
+ERROR: [VRFC 10-2063] Module <d_latch> not found while processing module instance <dlatch1> [/home/mr-robot/Documents/arch/module02/source-code/v/d_flip_flop.v:13]
+ERROR: [XSIM 43-3322] Static elaboration of top level Verilog design unit(s) in library work failed.
+INFO: [USF-XSim-69] 'elaborate' step finished in '2' seconds
+INFO: [USF-XSim-99] Step results log file:'/home/mr-robot/Documents/arch/module02/prob2/prob2.sim/sim_1/behav/xsim/elaborate.log'
+ERROR: [USF-XSim-62] 'elaborate' step failed with error(s). Please check the Tcl console output or '/home/mr-robot/Documents/arch/module02/prob2/prob2.sim/sim_1/behav/xsim/elaborate.log' file for more information.
+ERROR: [Vivado 12-4473] Detected error while running simulation. Please correct the issue and retry this operation.
+ERROR: [Common 17-39] 'launch_simulation' failed due to earlier errors.
+launch_simulation
+Command: launch_simulation 
+INFO: [Vivado 12-5682] Launching behavioral simulation in '/home/mr-robot/Documents/arch/module02/prob2/prob2.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-54] Inspecting design source files for 'd_flip_flop_tb' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in '/home/mr-robot/Documents/arch/module02/prob2/prob2.sim/sim_1/behav/xsim'
+xvlog --incr --relax -prj d_flip_flop_tb_vlog.prj
+Waiting for jobs to finish...
+No pending jobs, compilation finished.
+INFO: [USF-XSim-69] 'compile' step finished in '1' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in '/home/mr-robot/Documents/arch/module02/prob2/prob2.sim/sim_1/behav/xsim'
+xelab -wto ebdcaf876f35484eae7d83e5b641519c --incr --debug typical --relax --mt 8 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot d_flip_flop_tb_behav xil_defaultlib.d_flip_flop_tb xil_defaultlib.glbl -log elaborate.log
+Vivado Simulator 2020.2
+Copyright 1986-1999, 2001-2020 Xilinx, Inc. All Rights Reserved.
+Running: /tools/Xilinx/Vivado/2020.2/bin/unwrapped/lnx64.o/xelab -wto ebdcaf876f35484eae7d83e5b641519c --incr --debug typical --relax --mt 8 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot d_flip_flop_tb_behav xil_defaultlib.d_flip_flop_tb xil_defaultlib.glbl -log elaborate.log 
+Using 8 slave threads.
+Starting static elaboration
+Pass Through NonSizing Optimizer
+ERROR: [VRFC 10-2063] Module <d_latch> not found while processing module instance <dlatch1> [/home/mr-robot/Documents/arch/module02/source-code/v/d_flip_flop.v:13]
+ERROR: [XSIM 43-3322] Static elaboration of top level Verilog design unit(s) in library work failed.
+INFO: [USF-XSim-69] 'elaborate' step finished in '1' seconds
+INFO: [USF-XSim-99] Step results log file:'/home/mr-robot/Documents/arch/module02/prob2/prob2.sim/sim_1/behav/xsim/elaborate.log'
+ERROR: [USF-XSim-62] 'elaborate' step failed with error(s). Please check the Tcl console output or '/home/mr-robot/Documents/arch/module02/prob2/prob2.sim/sim_1/behav/xsim/elaborate.log' file for more information.
+ERROR: [Vivado 12-4473] Detected error while running simulation. Please correct the issue and retry this operation.
+ERROR: [Common 17-39] 'launch_simulation' failed due to earlier errors.
+set_property top d_ff_tb [get_filesets sim_1]
+set_property top_lib xil_defaultlib [get_filesets sim_1]
+update_compile_order -fileset sim_1
+launch_simulation
+Command: launch_simulation 
+INFO: [Vivado 12-5682] Launching behavioral simulation in '/home/mr-robot/Documents/arch/module02/prob2/prob2.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-54] Inspecting design source files for 'd_ff_tb' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in '/home/mr-robot/Documents/arch/module02/prob2/prob2.sim/sim_1/behav/xsim'
+xvlog --incr --relax -prj d_ff_tb_vlog.prj
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/mr-robot/Documents/arch/module02/source-code/v/d_ff.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module d_ff
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/mr-robot/Documents/arch/module02/source-code/v/d_ff_tb.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module d_ff_tb
+Waiting for jobs to finish...
+No pending jobs, compilation finished.
+INFO: [USF-XSim-69] 'compile' step finished in '1' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in '/home/mr-robot/Documents/arch/module02/prob2/prob2.sim/sim_1/behav/xsim'
+xelab -wto ebdcaf876f35484eae7d83e5b641519c --incr --debug typical --relax --mt 8 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot d_ff_tb_behav xil_defaultlib.d_ff_tb xil_defaultlib.glbl -log elaborate.log
+Vivado Simulator 2020.2
+Copyright 1986-1999, 2001-2020 Xilinx, Inc. All Rights Reserved.
+Running: /tools/Xilinx/Vivado/2020.2/bin/unwrapped/lnx64.o/xelab -wto ebdcaf876f35484eae7d83e5b641519c --incr --debug typical --relax --mt 8 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot d_ff_tb_behav xil_defaultlib.d_ff_tb xil_defaultlib.glbl -log elaborate.log 
+Using 8 slave threads.
+Starting static elaboration
+Pass Through NonSizing Optimizer
+Completed static elaboration
+Starting simulation data flow analysis
+WARNING: [XSIM 43-4099] "/home/mr-robot/Documents/arch/module02/source-code/v/d_ff.v" Line 6. Module d_ff doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "/home/mr-robot/Documents/arch/module02/source-code/v/d_ff.v" Line 6. Module d_ff doesn't have a timescale but at least one module in design has a timescale.
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling module xil_defaultlib.d_ff
+Compiling module xil_defaultlib.d_ff_tb
+Compiling module xil_defaultlib.glbl
+Built simulation snapshot d_ff_tb_behav
+
+****** Webtalk v2020.2 (64-bit)
+  **** SW Build 3064766 on Wed Nov 18 09:12:47 MST 2020
+  **** IP Build 3064653 on Wed Nov 18 14:17:31 MST 2020
+    ** Copyright 1986-2020 Xilinx, Inc. All Rights Reserved.
+
+source /home/mr-robot/Documents/arch/module02/prob2/prob2.sim/sim_1/behav/xsim/xsim.dir/d_ff_tb_behav/webtalk/xsim_webtalk.tcl -notrace
+INFO: [Common 17-186] '/home/mr-robot/Documents/arch/module02/prob2/prob2.sim/sim_1/behav/xsim/xsim.dir/d_ff_tb_behav/webtalk/usage_statistics_ext_xsim.xml' has been successfully sent to Xilinx on Fri Feb  5 20:16:34 2021. For additional details about this file, please refer to the WebTalk help file at /tools/Xilinx/Vivado/2020.2/doc/webtalk_introduction.html.
+INFO: [Common 17-206] Exiting Webtalk at Fri Feb  5 20:16:34 2021...
+run_program: Time (s): cpu = 00:00:03 ; elapsed = 00:00:05 . Memory (MB): peak = 7711.621 ; gain = 0.000 ; free physical = 420 ; free virtual = 10690
+INFO: [USF-XSim-69] 'elaborate' step finished in '6' seconds
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in '/home/mr-robot/Documents/arch/module02/prob2/prob2.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "d_ff_tb_behav -key {Behavioral:sim_1:Functional:d_ff_tb} -tclbatch {d_ff_tb.tcl} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Vivado Simulator 2020.2
+Time resolution is 1 ps
+source d_ff_tb.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run 1000ns
+$finish called at time : 30 ns : File "/home/mr-robot/Documents/arch/module02/source-code/v/d_ff_tb.v" Line 31
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'd_ff_tb_behav' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 1000ns
+launch_simulation: Time (s): cpu = 00:00:06 ; elapsed = 00:00:09 . Memory (MB): peak = 7723.621 ; gain = 12.000 ; free physical = 401 ; free virtual = 10670
+close_sim
+INFO: [Simtcl 6-16] Simulation closed
+launch_simulation
+Command: launch_simulation 
+INFO: [Vivado 12-5682] Launching behavioral simulation in '/home/mr-robot/Documents/arch/module02/prob2/prob2.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-54] Inspecting design source files for 'd_ff_tb' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in '/home/mr-robot/Documents/arch/module02/prob2/prob2.sim/sim_1/behav/xsim'
+xvlog --incr --relax -prj d_ff_tb_vlog.prj
+Waiting for jobs to finish...
+No pending jobs, compilation finished.
+INFO: [USF-XSim-69] 'compile' step finished in '1' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in '/home/mr-robot/Documents/arch/module02/prob2/prob2.sim/sim_1/behav/xsim'
+xelab -wto ebdcaf876f35484eae7d83e5b641519c --incr --debug typical --relax --mt 8 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot d_ff_tb_behav xil_defaultlib.d_ff_tb xil_defaultlib.glbl -log elaborate.log
+Vivado Simulator 2020.2
+Copyright 1986-1999, 2001-2020 Xilinx, Inc. All Rights Reserved.
+Running: /tools/Xilinx/Vivado/2020.2/bin/unwrapped/lnx64.o/xelab -wto ebdcaf876f35484eae7d83e5b641519c --incr --debug typical --relax --mt 8 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot d_ff_tb_behav xil_defaultlib.d_ff_tb xil_defaultlib.glbl -log elaborate.log 
+Using 8 slave threads.
+Starting static elaboration
+Pass Through NonSizing Optimizer
+Completed static elaboration
+INFO: [XSIM 43-4323] No Change in HDL. Linking previously generated obj files to create kernel
+INFO: [USF-XSim-69] 'elaborate' step finished in '1' seconds
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in '/home/mr-robot/Documents/arch/module02/prob2/prob2.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "d_ff_tb_behav -key {Behavioral:sim_1:Functional:d_ff_tb} -tclbatch {d_ff_tb.tcl} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Vivado Simulator 2020.2
+Time resolution is 1 ps
+source d_ff_tb.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run 1000ns
+$finish called at time : 30 ns : File "/home/mr-robot/Documents/arch/module02/source-code/v/d_ff_tb.v" Line 31
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'd_ff_tb_behav' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 1000ns
+close_sim
+INFO: [Simtcl 6-16] Simulation closed
+set_property top time_counter_verilog [current_fileset]
+set_property top time_counter_verilog_tb [get_filesets sim_1]
+set_property top_lib xil_defaultlib [get_filesets sim_1]
+update_compile_order -fileset sources_1
+update_compile_order -fileset sim_1
+launch_simulation
+Command: launch_simulation 
+INFO: [Vivado 12-5682] Launching behavioral simulation in '/home/mr-robot/Documents/arch/module02/prob2/prob2.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-54] Inspecting design source files for 'time_counter_verilog_tb' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in '/home/mr-robot/Documents/arch/module02/prob2/prob2.sim/sim_1/behav/xsim'
+xvlog --incr --relax -prj time_counter_verilog_tb_vlog.prj
+Waiting for jobs to finish...
+No pending jobs, compilation finished.
+INFO: [USF-XSim-69] 'compile' step finished in '1' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in '/home/mr-robot/Documents/arch/module02/prob2/prob2.sim/sim_1/behav/xsim'
+xelab -wto ebdcaf876f35484eae7d83e5b641519c --incr --debug typical --relax --mt 8 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot time_counter_verilog_tb_behav xil_defaultlib.time_counter_verilog_tb xil_defaultlib.glbl -log elaborate.log
+Vivado Simulator 2020.2
+Copyright 1986-1999, 2001-2020 Xilinx, Inc. All Rights Reserved.
+Running: /tools/Xilinx/Vivado/2020.2/bin/unwrapped/lnx64.o/xelab -wto ebdcaf876f35484eae7d83e5b641519c --incr --debug typical --relax --mt 8 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot time_counter_verilog_tb_behav xil_defaultlib.time_counter_verilog_tb xil_defaultlib.glbl -log elaborate.log 
+Using 8 slave threads.
+Starting static elaboration
+Pass Through NonSizing Optimizer
+Completed static elaboration
+INFO: [XSIM 43-4323] No Change in HDL. Linking previously generated obj files to create kernel
+INFO: [USF-XSim-69] 'elaborate' step finished in '2' seconds
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in '/home/mr-robot/Documents/arch/module02/prob2/prob2.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "time_counter_verilog_tb_behav -key {Behavioral:sim_1:Functional:time_counter_verilog_tb} -tclbatch {time_counter_verilog_tb.tcl} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Vivado Simulator 2020.2
+Time resolution is 1 ps
+source time_counter_verilog_tb.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run 1000ns
+$finish called at time : 813 ns : File "/home/mr-robot/Documents/arch/module02/source-code/v/time_counter_verilog_tb.v" Line 17
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'time_counter_verilog_tb_behav' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 1000ns
+close_sim
+INFO: [Simtcl 6-16] Simulation closed
+set_property top add1_tb [get_filesets sim_1]
+set_property top_lib xil_defaultlib [get_filesets sim_1]
+update_compile_order -fileset sim_1
+launch_simulation
+Command: launch_simulation 
+INFO: [Vivado 12-5682] Launching behavioral simulation in '/home/mr-robot/Documents/arch/module02/prob2/prob2.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-54] Inspecting design source files for 'add1_tb' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in '/home/mr-robot/Documents/arch/module02/prob2/prob2.sim/sim_1/behav/xsim'
+xvlog --incr --relax -prj add1_tb_vlog.prj
+Waiting for jobs to finish...
+No pending jobs, compilation finished.
+INFO: [USF-XSim-69] 'compile' step finished in '1' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in '/home/mr-robot/Documents/arch/module02/prob2/prob2.sim/sim_1/behav/xsim'
+xelab -wto ebdcaf876f35484eae7d83e5b641519c --incr --debug typical --relax --mt 8 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot add1_tb_behav xil_defaultlib.add1_tb xil_defaultlib.glbl -log elaborate.log
+Vivado Simulator 2020.2
+Copyright 1986-1999, 2001-2020 Xilinx, Inc. All Rights Reserved.
+Running: /tools/Xilinx/Vivado/2020.2/bin/unwrapped/lnx64.o/xelab -wto ebdcaf876f35484eae7d83e5b641519c --incr --debug typical --relax --mt 8 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot add1_tb_behav xil_defaultlib.add1_tb xil_defaultlib.glbl -log elaborate.log 
+Using 8 slave threads.
+Starting static elaboration
+Pass Through NonSizing Optimizer
+Completed static elaboration
+INFO: [XSIM 43-4323] No Change in HDL. Linking previously generated obj files to create kernel
+INFO: [USF-XSim-69] 'elaborate' step finished in '1' seconds
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in '/home/mr-robot/Documents/arch/module02/prob2/prob2.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "add1_tb_behav -key {Behavioral:sim_1:Functional:add1_tb} -tclbatch {add1_tb.tcl} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Vivado Simulator 2020.2
+Time resolution is 1 ps
+source add1_tb.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run 1000ns
+$finish called at time : 8 ns : File "/home/mr-robot/Documents/arch/module02/source-code/v/add1_tb.v" Line 15
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'add1_tb_behav' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 1000ns
+close_sim
+INFO: [Simtcl 6-16] Simulation closed
+close_project
+create_project prob1 /home/mr-robot/Documents/arch/module02/prob1 -part xc7a100tcsg324-1
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1704] No user IP repositories specified
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository '/tools/Xilinx/Vivado/2020.2/data/ip'.
+file mkdir /home/mr-robot/Documents/arch/module02/prob1/prob1.srcs/sources_1/new
+close [ open /home/mr-robot/Documents/arch/module02/prob1/prob1.srcs/sources_1/new/logic.v w ]
+add_files /home/mr-robot/Documents/arch/module02/prob1/prob1.srcs/sources_1/new/logic.v
+update_compile_order -fileset sources_1
+file mkdir /home/mr-robot/Documents/arch/module02/prob1/prob1.srcs/sim_1/new
+set_property SOURCE_SET sources_1 [get_filesets sim_1]
+close [ open /home/mr-robot/Documents/arch/module02/prob1/prob1.srcs/sim_1/new/logic_tb.v w ]
+add_files -fileset sim_1 /home/mr-robot/Documents/arch/module02/prob1/prob1.srcs/sim_1/new/logic_tb.v
+update_compile_order -fileset sim_1
+launch_simulation
+Command: launch_simulation 
+INFO: [Vivado 12-5682] Launching behavioral simulation in '/home/mr-robot/Documents/arch/module02/prob1/prob1.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-54] Inspecting design source files for 'logic_tb' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in '/home/mr-robot/Documents/arch/module02/prob1/prob1.sim/sim_1/behav/xsim'
+xvlog --incr --relax -prj logic_tb_vlog.prj
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/mr-robot/Documents/arch/module02/prob1/prob1.srcs/sources_1/new/logic.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module logic
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/mr-robot/Documents/arch/module02/prob1/prob1.srcs/sim_1/new/logic_tb.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module logic_tb
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/mr-robot/Documents/arch/module02/prob1/prob1.sim/sim_1/behav/xsim/glbl.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module glbl
+Waiting for jobs to finish...
+No pending jobs, compilation finished.
+INFO: [USF-XSim-69] 'compile' step finished in '2' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in '/home/mr-robot/Documents/arch/module02/prob1/prob1.sim/sim_1/behav/xsim'
+xelab -wto d2967f8dbb344b159f6139ed7ca64e10 --incr --debug typical --relax --mt 8 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot logic_tb_behav xil_defaultlib.logic_tb xil_defaultlib.glbl -log elaborate.log
+Vivado Simulator 2020.2
+Copyright 1986-1999, 2001-2020 Xilinx, Inc. All Rights Reserved.
+Running: /tools/Xilinx/Vivado/2020.2/bin/unwrapped/lnx64.o/xelab -wto d2967f8dbb344b159f6139ed7ca64e10 --incr --debug typical --relax --mt 8 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot logic_tb_behav xil_defaultlib.logic_tb xil_defaultlib.glbl -log elaborate.log 
+Using 8 slave threads.
+Starting static elaboration
+Pass Through NonSizing Optimizer
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling module xil_defaultlib.logic
+Compiling module xil_defaultlib.logic_tb
+Compiling module xil_defaultlib.glbl
+Built simulation snapshot logic_tb_behav
+
+****** Webtalk v2020.2 (64-bit)
+  **** SW Build 3064766 on Wed Nov 18 09:12:47 MST 2020
+  **** IP Build 3064653 on Wed Nov 18 14:17:31 MST 2020
+    ** Copyright 1986-2020 Xilinx, Inc. All Rights Reserved.
+
+source /home/mr-robot/Documents/arch/module02/prob1/prob1.sim/sim_1/behav/xsim/xsim.dir/logic_tb_behav/webtalk/xsim_webtalk.tcl -notrace
+INFO: [Common 17-186] '/home/mr-robot/Documents/arch/module02/prob1/prob1.sim/sim_1/behav/xsim/xsim.dir/logic_tb_behav/webtalk/usage_statistics_ext_xsim.xml' has been successfully sent to Xilinx on Fri Feb  5 20:49:12 2021. For additional details about this file, please refer to the WebTalk help file at /tools/Xilinx/Vivado/2020.2/doc/webtalk_introduction.html.
+INFO: [Common 17-206] Exiting Webtalk at Fri Feb  5 20:49:12 2021...
+run_program: Time (s): cpu = 00:00:04 ; elapsed = 00:00:06 . Memory (MB): peak = 7803.676 ; gain = 0.000 ; free physical = 391 ; free virtual = 10666
+INFO: [USF-XSim-69] 'elaborate' step finished in '6' seconds
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in '/home/mr-robot/Documents/arch/module02/prob1/prob1.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "logic_tb_behav -key {Behavioral:sim_1:Functional:logic_tb} -tclbatch {logic_tb.tcl} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Vivado Simulator 2020.2
+Time resolution is 1 ps
+source logic_tb.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run 1000ns
+$finish called at time : 16 ns : File "/home/mr-robot/Documents/arch/module02/prob1/prob1.srcs/sim_1/new/logic_tb.v" Line 18
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'logic_tb_behav' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 1000ns
+launch_simulation: Time (s): cpu = 00:00:09 ; elapsed = 00:00:12 . Memory (MB): peak = 7803.676 ; gain = 0.000 ; free physical = 392 ; free virtual = 10667
+update_compile_order -fileset sim_1
+close_sim
+INFO: [Simtcl 6-16] Simulation closed
+close_sim: Time (s): cpu = 00:00:04 ; elapsed = 00:00:05 . Memory (MB): peak = 7803.676 ; gain = 0.000 ; free physical = 391 ; free virtual = 10667
+close_project
+open_project /home/mr-robot/Documents/arch/module02/prob2/prob2.xpr
+WARNING: [filemgmt 56-3] Default IP Output Path : Could not find the directory '/home/mr-robot/Documents/arch/module02/prob2/prob2.gen/sources_1'.
+Scanning sources...
+Finished scanning sources
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1704] No user IP repositories specified
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository '/tools/Xilinx/Vivado/2020.2/data/ip'.
+update_compile_order -fileset sources_1
+add_files -norecurse /home/mr-robot/Documents/arch/module02/source-code/v/counter_6.v
+update_compile_order -fileset sources_1
+set_property SOURCE_SET sources_1 [get_filesets sim_1]
+add_files -fileset sim_1 -norecurse /home/mr-robot/Documents/arch/module02/source-code/v/counter_6_tb.v
+update_compile_order -fileset sim_1
+set_property top counter_6_tb [get_filesets sim_1]
+set_property top_lib xil_defaultlib [get_filesets sim_1]
+update_compile_order -fileset sim_1
+launch_simulation
+Command: launch_simulation 
+INFO: [Vivado 12-5682] Launching behavioral simulation in '/home/mr-robot/Documents/arch/module02/prob2/prob2.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-54] Inspecting design source files for 'counter_6_tb' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in '/home/mr-robot/Documents/arch/module02/prob2/prob2.sim/sim_1/behav/xsim'
+xvlog --incr --relax -prj counter_6_tb_vlog.prj
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/mr-robot/Documents/arch/module02/source-code/v/counter_6.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module counter_6
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/mr-robot/Documents/arch/module02/source-code/v/counter_6_tb.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module counter_6_tb
+Waiting for jobs to finish...
+No pending jobs, compilation finished.
+INFO: [USF-XSim-69] 'compile' step finished in '1' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in '/home/mr-robot/Documents/arch/module02/prob2/prob2.sim/sim_1/behav/xsim'
+xelab -wto ebdcaf876f35484eae7d83e5b641519c --incr --debug typical --relax --mt 8 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot counter_6_tb_behav xil_defaultlib.counter_6_tb xil_defaultlib.glbl -log elaborate.log
+Vivado Simulator 2020.2
+Copyright 1986-1999, 2001-2020 Xilinx, Inc. All Rights Reserved.
+Running: /tools/Xilinx/Vivado/2020.2/bin/unwrapped/lnx64.o/xelab -wto ebdcaf876f35484eae7d83e5b641519c --incr --debug typical --relax --mt 8 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot counter_6_tb_behav xil_defaultlib.counter_6_tb xil_defaultlib.glbl -log elaborate.log 
+Using 8 slave threads.
+Starting static elaboration
+Pass Through NonSizing Optimizer
+Completed static elaboration
+Starting simulation data flow analysis
+WARNING: [XSIM 43-4099] "/home/mr-robot/Documents/arch/module02/source-code/v/counter_6.v" Line 6. Module counter_6 doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "/home/mr-robot/Documents/arch/module02/source-code/v/counter_6.v" Line 6. Module counter_6 doesn't have a timescale but at least one module in design has a timescale.
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling module xil_defaultlib.counter_6
+Compiling module xil_defaultlib.counter_6_tb
+Compiling module xil_defaultlib.glbl
+Built simulation snapshot counter_6_tb_behav
+
+****** Webtalk v2020.2 (64-bit)
+  **** SW Build 3064766 on Wed Nov 18 09:12:47 MST 2020
+  **** IP Build 3064653 on Wed Nov 18 14:17:31 MST 2020
+    ** Copyright 1986-2020 Xilinx, Inc. All Rights Reserved.
+
+source /home/mr-robot/Documents/arch/module02/prob2/prob2.sim/sim_1/behav/xsim/xsim.dir/counter_6_tb_behav/webtalk/xsim_webtalk.tcl -notrace
+INFO: [Common 17-186] '/home/mr-robot/Documents/arch/module02/prob2/prob2.sim/sim_1/behav/xsim/xsim.dir/counter_6_tb_behav/webtalk/usage_statistics_ext_xsim.xml' has been successfully sent to Xilinx on Fri Feb  5 20:57:30 2021. For additional details about this file, please refer to the WebTalk help file at /tools/Xilinx/Vivado/2020.2/doc/webtalk_introduction.html.
+INFO: [Common 17-206] Exiting Webtalk at Fri Feb  5 20:57:30 2021...
+run_program: Time (s): cpu = 00:00:04 ; elapsed = 00:00:05 . Memory (MB): peak = 7803.676 ; gain = 0.000 ; free physical = 386 ; free virtual = 10659
+INFO: [USF-XSim-69] 'elaborate' step finished in '5' seconds
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in '/home/mr-robot/Documents/arch/module02/prob2/prob2.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "counter_6_tb_behav -key {Behavioral:sim_1:Functional:counter_6_tb} -tclbatch {counter_6_tb.tcl} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Vivado Simulator 2020.2
+Time resolution is 1 ps
+source counter_6_tb.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run 1000ns
+time	u	q	a	b	c	d	e	f	g
+0	1	0	0	0	0	0	0	0	1
+10	1	1	1	0	0	1	1	1	1
+20	1	2	0	0	1	0	0	1	0
+30	1	3	0	0	0	0	1	1	0
+40	1	4	1	0	0	1	1	0	0
+50	1	5	0	1	0	0	1	0	0
+60	1	0	0	0	0	0	0	0	1
+70	1	1	1	0	0	1	1	1	1
+80	1	2	0	0	1	0	0	1	0
+85	0	2	0	0	1	0	0	1	0
+90	0	1	1	0	0	1	1	1	1
+100	0	0	0	0	0	0	0	0	1
+110	0	5	0	1	0	0	1	0	0
+120	0	4	1	0	0	1	1	0	0
+130	0	3	0	0	0	0	1	1	0
+140	0	2	0	0	1	0	0	1	0
+150	0	1	1	0	0	1	1	1	1
+160	0	0	0	0	0	0	0	0	1
+170	0	5	0	1	0	0	1	0	0
+175	1	5	0	1	0	0	1	0	0
+$finish called at time : 176 ns : File "/home/mr-robot/Documents/arch/module02/source-code/v/counter_6_tb.v" Line 23
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'counter_6_tb_behav' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 1000ns
+launch_simulation: Time (s): cpu = 00:00:07 ; elapsed = 00:00:10 . Memory (MB): peak = 7803.676 ; gain = 0.000 ; free physical = 382 ; free virtual = 10655
+launch_runs synth_1 -jobs 4
+[Fri Feb  5 20:59:37 2021] Launched synth_1...
+Run output will be captured here: /home/mr-robot/Documents/arch/module02/prob2/prob2.runs/synth_1/runme.log
+synth_design -rtl -rtl_skip_mlo -name rtl_1
+Command: synth_design -rtl -rtl_skip_mlo -name rtl_1
+Starting synth_design
+Using part: xc7a100tcsg324-1
+Top: time_counter_verilog
+INFO: [Device 21-403] Loading part xc7a100tcsg324-1
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:03 ; elapsed = 00:00:03 . Memory (MB): peak = 7803.676 ; gain = 0.000 ; free physical = 622 ; free virtual = 10242
+---------------------------------------------------------------------------------
+INFO: [Synth 8-6157] synthesizing module 'time_counter_verilog' [/home/mr-robot/Documents/arch/module02/source-code/v/time_counter_verilog.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'time_counter_verilog' (1#1) [/home/mr-robot/Documents/arch/module02/source-code/v/time_counter_verilog.v:6]
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:00:04 ; elapsed = 00:00:04 . Memory (MB): peak = 7803.676 ; gain = 0.000 ; free physical = 664 ; free virtual = 10285
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:05 ; elapsed = 00:00:05 . Memory (MB): peak = 7803.676 ; gain = 0.000 ; free physical = 658 ; free virtual = 10279
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:05 ; elapsed = 00:00:05 . Memory (MB): peak = 7803.676 ; gain = 0.000 ; free physical = 658 ; free virtual = 10279
+---------------------------------------------------------------------------------
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 7803.676 ; gain = 0.000 ; free physical = 648 ; free virtual = 10272
+INFO: [Project 1-570] Preparing netlist for logic optimization
+
+Processing XDC Constraints
+Initializing timing engine
+Completed Processing XDC Constraints
+
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 7803.676 ; gain = 0.000 ; free physical = 576 ; free virtual = 10200
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+RTL Elaboration Complete:  : Time (s): cpu = 00:00:13 ; elapsed = 00:00:09 . Memory (MB): peak = 7803.676 ; gain = 0.000 ; free physical = 450 ; free virtual = 10105
+5 Infos, 0 Warnings, 0 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:00:15 ; elapsed = 00:00:12 . Memory (MB): peak = 7803.676 ; gain = 0.000 ; free physical = 450 ; free virtual = 10105
