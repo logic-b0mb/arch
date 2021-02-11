@@ -1,0 +1,9 @@
+0.7
+2020.2
+Nov 18 2020
+09:20:35
+/home/mr-robot/Documents/arch/module03/wallace8bit/csa.v,1439939882,verilog,,/home/mr-robot/Documents/arch/module03/wallace8bit/wallace_8x8.v,,csa,,,,,,,,
+/home/mr-robot/Documents/arch/module03/wallace8bit/wallace_8x8.v,1439939892,verilog,,/home/mr-robot/Documents/arch/module03/wallace8bit/wallace_8x8_product.v,,wallace_8x8,,,,,,,,
+/home/mr-robot/Documents/arch/module03/wallace8bit/wallace_8x8_product.v,1439939890,verilog,,/home/mr-robot/Documents/arch/module03/wallace8bit/wallace_8x8_product_tb.v,,wallace_8x8_product,,,,,,,,
+/home/mr-robot/Documents/arch/module03/wallace8bit/wallace_8x8_product_tb.v,1439939906,verilog,,,,wallace_8x8_product_tb,,,,,,,,
+/home/mr-robot/Documents/arch/module03/wallace_mult/wallace_mult.sim/sim_1/behav/xsim/glbl.v,1605673889,verilog,,,,glbl,,,,,,,,

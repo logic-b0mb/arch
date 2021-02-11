@@ -2,8 +2,8 @@
 # Webtalk v2020.2 (64-bit)
 # SW Build 3064766 on Wed Nov 18 09:12:47 MST 2020
 # IP Build 3064653 on Wed Nov 18 14:17:31 MST 2020
-# Start of session at: Fri Feb  5 20:57:28 2021
-# Process ID: 72590
+# Start of session at: Fri Feb  5 21:43:17 2021
+# Process ID: 78757
 # Current directory: /home/mr-robot/Documents/arch/module02/prob2/prob2.sim/sim_1/behav/xsim
 # Command line: wbtcv -mode batch -source /home/mr-robot/Documents/arch/module02/prob2/prob2.sim/sim_1/behav/xsim/xsim.dir/counter_6_tb_behav/webtalk/xsim_webtalk.tcl -notrace
 # Log file: /home/mr-robot/Documents/arch/module02/prob2/prob2.sim/sim_1/behav/xsim/webtalk.log

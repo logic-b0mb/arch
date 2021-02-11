@@ -1,0 +1,10 @@
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/mr-robot/Documents/arch/module03/wallace8bit/csa.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module csa
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/mr-robot/Documents/arch/module03/wallace8bit/wallace_8x8.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module wallace_8x8
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/mr-robot/Documents/arch/module03/wallace8bit/wallace_8x8_product.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module wallace_8x8_product
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/mr-robot/Documents/arch/module03/wallace8bit/wallace_8x8_product_tb.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module wallace_8x8_product_tb
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/mr-robot/Documents/arch/module03/wallace_mult/wallace_mult.sim/sim_1/behav/xsim/glbl.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module glbl

@@ -1,0 +1,117 @@
+Vivado Simulator 2020.2
+Copyright 1986-1999, 2001-2020 Xilinx, Inc. All Rights Reserved.
+Running: /tools/Xilinx/Vivado/2020.2/bin/unwrapped/lnx64.o/xelab -wto 554316da6dc14a1a9a91c2ade7e1ca4a --incr --debug typical --relax --mt 8 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot wallace_8x8_product_tb_behav xil_defaultlib.wallace_8x8_product_tb xil_defaultlib.glbl -log elaborate.log 
+Using 8 slave threads.
+Starting static elaboration
+Pass Through NonSizing Optimizer
+Completed static elaboration
+Starting simulation data flow analysis
+WARNING: [XSIM 43-4099] "/home/mr-robot/Documents/arch/module03/wallace8bit/wallace_8x8_product.v" Line 6. Module wallace_8x8_product doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "/home/mr-robot/Documents/arch/module03/wallace8bit/wallace_8x8.v" Line 6. Module wallace_8x8 doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "/home/mr-robot/Documents/arch/module03/wallace8bit/csa.v" Line 6. Module csa doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "/home/mr-robot/Documents/arch/module03/wallace8bit/csa.v" Line 6. Module csa doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "/home/mr-robot/Documents/arch/module03/wallace8bit/csa.v" Line 6. Module csa doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "/home/mr-robot/Documents/arch/module03/wallace8bit/csa.v" Line 6. Module csa doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "/home/mr-robot/Documents/arch/module03/wallace8bit/csa.v" Line 6. Module csa doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "/home/mr-robot/Documents/arch/module03/wallace8bit/csa.v" Line 6. Module csa doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "/home/mr-robot/Documents/arch/module03/wallace8bit/csa.v" Line 6. Module csa doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "/home/mr-robot/Documents/arch/module03/wallace8bit/csa.v" Line 6. Module csa doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "/home/mr-robot/Documents/arch/module03/wallace8bit/csa.v" Line 6. Module csa doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "/home/mr-robot/Documents/arch/module03/wallace8bit/csa.v" Line 6. Module csa doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "/home/mr-robot/Documents/arch/module03/wallace8bit/csa.v" Line 6. Module csa doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "/home/mr-robot/Documents/arch/module03/wallace8bit/csa.v" Line 6. Module csa doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "/home/mr-robot/Documents/arch/module03/wallace8bit/csa.v" Line 6. Module csa doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "/home/mr-robot/Documents/arch/module03/wallace8bit/csa.v" Line 6. Module csa doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "/home/mr-robot/Documents/arch/module03/wallace8bit/csa.v" Line 6. Module csa doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "/home/mr-robot/Documents/arch/module03/wallace8bit/csa.v" Line 6. Module csa doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "/home/mr-robot/Documents/arch/module03/wallace8bit/csa.v" Line 6. Module csa doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "/home/mr-robot/Documents/arch/module03/wallace8bit/csa.v" Line 6. Module csa doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "/home/mr-robot/Documents/arch/module03/wallace8bit/csa.v" Line 6. Module csa doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "/home/mr-robot/Documents/arch/module03/wallace8bit/csa.v" Line 6. Module csa doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "/home/mr-robot/Documents/arch/module03/wallace8bit/csa.v" Line 6. Module csa doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "/home/mr-robot/Documents/arch/module03/wallace8bit/csa.v" Line 6. Module csa doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "/home/mr-robot/Documents/arch/module03/wallace8bit/csa.v" Line 6. Module csa doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "/home/mr-robot/Documents/arch/module03/wallace8bit/csa.v" Line 6. Module csa doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "/home/mr-robot/Documents/arch/module03/wallace8bit/csa.v" Line 6. Module csa doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "/home/mr-robot/Documents/arch/module03/wallace8bit/csa.v" Line 6. Module csa doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "/home/mr-robot/Documents/arch/module03/wallace8bit/csa.v" Line 6. Module csa doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "/home/mr-robot/Documents/arch/module03/wallace8bit/csa.v" Line 6. Module csa doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "/home/mr-robot/Documents/arch/module03/wallace8bit/csa.v" Line 6. Module csa doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "/home/mr-robot/Documents/arch/module03/wallace8bit/csa.v" Line 6. Module csa doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "/home/mr-robot/Documents/arch/module03/wallace8bit/csa.v" Line 6. Module csa doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "/home/mr-robot/Documents/arch/module03/wallace8bit/csa.v" Line 6. Module csa doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "/home/mr-robot/Documents/arch/module03/wallace8bit/csa.v" Line 6. Module csa doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "/home/mr-robot/Documents/arch/module03/wallace8bit/csa.v" Line 6. Module csa doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "/home/mr-robot/Documents/arch/module03/wallace8bit/csa.v" Line 6. Module csa doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "/home/mr-robot/Documents/arch/module03/wallace8bit/csa.v" Line 6. Module csa doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "/home/mr-robot/Documents/arch/module03/wallace8bit/csa.v" Line 6. Module csa doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "/home/mr-robot/Documents/arch/module03/wallace8bit/csa.v" Line 6. Module csa doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "/home/mr-robot/Documents/arch/module03/wallace8bit/csa.v" Line 6. Module csa doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "/home/mr-robot/Documents/arch/module03/wallace8bit/csa.v" Line 6. Module csa doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "/home/mr-robot/Documents/arch/module03/wallace8bit/csa.v" Line 6. Module csa doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "/home/mr-robot/Documents/arch/module03/wallace8bit/csa.v" Line 6. Module csa doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "/home/mr-robot/Documents/arch/module03/wallace8bit/csa.v" Line 6. Module csa doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "/home/mr-robot/Documents/arch/module03/wallace8bit/csa.v" Line 6. Module csa doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "/home/mr-robot/Documents/arch/module03/wallace8bit/csa.v" Line 6. Module csa doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "/home/mr-robot/Documents/arch/module03/wallace8bit/csa.v" Line 6. Module csa doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "/home/mr-robot/Documents/arch/module03/wallace8bit/csa.v" Line 6. Module csa doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "/home/mr-robot/Documents/arch/module03/wallace8bit/csa.v" Line 6. Module csa doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "/home/mr-robot/Documents/arch/module03/wallace8bit/csa.v" Line 6. Module csa doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "/home/mr-robot/Documents/arch/module03/wallace8bit/csa.v" Line 6. Module csa doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "/home/mr-robot/Documents/arch/module03/wallace8bit/csa.v" Line 6. Module csa doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "/home/mr-robot/Documents/arch/module03/wallace8bit/csa.v" Line 6. Module csa doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "/home/mr-robot/Documents/arch/module03/wallace8bit/csa.v" Line 6. Module csa doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "/home/mr-robot/Documents/arch/module03/wallace8bit/csa.v" Line 6. Module csa doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "/home/mr-robot/Documents/arch/module03/wallace8bit/csa.v" Line 6. Module csa doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "/home/mr-robot/Documents/arch/module03/wallace8bit/csa.v" Line 6. Module csa doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "/home/mr-robot/Documents/arch/module03/wallace8bit/csa.v" Line 6. Module csa doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "/home/mr-robot/Documents/arch/module03/wallace8bit/csa.v" Line 6. Module csa doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "/home/mr-robot/Documents/arch/module03/wallace8bit/wallace_8x8_product.v" Line 6. Module wallace_8x8_product doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "/home/mr-robot/Documents/arch/module03/wallace8bit/wallace_8x8.v" Line 6. Module wallace_8x8 doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "/home/mr-robot/Documents/arch/module03/wallace8bit/csa.v" Line 6. Module csa doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "/home/mr-robot/Documents/arch/module03/wallace8bit/csa.v" Line 6. Module csa doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "/home/mr-robot/Documents/arch/module03/wallace8bit/csa.v" Line 6. Module csa doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "/home/mr-robot/Documents/arch/module03/wallace8bit/csa.v" Line 6. Module csa doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "/home/mr-robot/Documents/arch/module03/wallace8bit/csa.v" Line 6. Module csa doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "/home/mr-robot/Documents/arch/module03/wallace8bit/csa.v" Line 6. Module csa doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "/home/mr-robot/Documents/arch/module03/wallace8bit/csa.v" Line 6. Module csa doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "/home/mr-robot/Documents/arch/module03/wallace8bit/csa.v" Line 6. Module csa doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "/home/mr-robot/Documents/arch/module03/wallace8bit/csa.v" Line 6. Module csa doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "/home/mr-robot/Documents/arch/module03/wallace8bit/csa.v" Line 6. Module csa doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "/home/mr-robot/Documents/arch/module03/wallace8bit/csa.v" Line 6. Module csa doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "/home/mr-robot/Documents/arch/module03/wallace8bit/csa.v" Line 6. Module csa doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "/home/mr-robot/Documents/arch/module03/wallace8bit/csa.v" Line 6. Module csa doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "/home/mr-robot/Documents/arch/module03/wallace8bit/csa.v" Line 6. Module csa doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "/home/mr-robot/Documents/arch/module03/wallace8bit/csa.v" Line 6. Module csa doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "/home/mr-robot/Documents/arch/module03/wallace8bit/csa.v" Line 6. Module csa doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "/home/mr-robot/Documents/arch/module03/wallace8bit/csa.v" Line 6. Module csa doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "/home/mr-robot/Documents/arch/module03/wallace8bit/csa.v" Line 6. Module csa doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "/home/mr-robot/Documents/arch/module03/wallace8bit/csa.v" Line 6. Module csa doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "/home/mr-robot/Documents/arch/module03/wallace8bit/csa.v" Line 6. Module csa doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "/home/mr-robot/Documents/arch/module03/wallace8bit/csa.v" Line 6. Module csa doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "/home/mr-robot/Documents/arch/module03/wallace8bit/csa.v" Line 6. Module csa doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "/home/mr-robot/Documents/arch/module03/wallace8bit/csa.v" Line 6. Module csa doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "/home/mr-robot/Documents/arch/module03/wallace8bit/csa.v" Line 6. Module csa doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "/home/mr-robot/Documents/arch/module03/wallace8bit/csa.v" Line 6. Module csa doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "/home/mr-robot/Documents/arch/module03/wallace8bit/csa.v" Line 6. Module csa doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "/home/mr-robot/Documents/arch/module03/wallace8bit/csa.v" Line 6. Module csa doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "/home/mr-robot/Documents/arch/module03/wallace8bit/csa.v" Line 6. Module csa doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "/home/mr-robot/Documents/arch/module03/wallace8bit/csa.v" Line 6. Module csa doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "/home/mr-robot/Documents/arch/module03/wallace8bit/csa.v" Line 6. Module csa doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "/home/mr-robot/Documents/arch/module03/wallace8bit/csa.v" Line 6. Module csa doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "/home/mr-robot/Documents/arch/module03/wallace8bit/csa.v" Line 6. Module csa doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "/home/mr-robot/Documents/arch/module03/wallace8bit/csa.v" Line 6. Module csa doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "/home/mr-robot/Documents/arch/module03/wallace8bit/csa.v" Line 6. Module csa doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "/home/mr-robot/Documents/arch/module03/wallace8bit/csa.v" Line 6. Module csa doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "/home/mr-robot/Documents/arch/module03/wallace8bit/csa.v" Line 6. Module csa doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "/home/mr-robot/Documents/arch/module03/wallace8bit/csa.v" Line 6. Module csa doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "/home/mr-robot/Documents/arch/module03/wallace8bit/csa.v" Line 6. Module csa doesn't have a timescale but at least one module in design has a timescale.
+INFO: [Common 17-14] Message 'XSIM 43-4099' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings.
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling module xil_defaultlib.csa
+Compiling module xil_defaultlib.wallace_8x8
+Compiling module xil_defaultlib.wallace_8x8_product
+Compiling module xil_defaultlib.wallace_8x8_product_tb
+Compiling module xil_defaultlib.glbl
+Built simulation snapshot wallace_8x8_product_tb_behav
