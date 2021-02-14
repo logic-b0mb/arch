@@ -13,16 +13,37 @@ module newton_tb;
     wire        busy;
     wire        ready;
     wire  [1:0] count;
+    
     newton div (a,b,start,clk,clrn,q,busy,ready,count);
-    initial begin
-            clrn  = 0;
-            start = 0;
-            clk   = 1;
-            a     = 32'hc0000000;
-            b     = 32'h80000000;
-        #35 clrn  = 1;
-            start = 1;
-        #70 start = 0;
-    end
+    
     always #35 clk = !clk;
+    
+    initial begin
+        // a = 8
+       	// b = 10
+       	// quot = 0
+       	// rem = 10
+           clrn  = 0;
+           start = 0;
+           clk   = 1;
+           a = 32'b00000000000000000000000000001000;
+           b = 32'b00000000000000000000000000001010;
+       #35 clrn  = 1;
+           start = 1;
+       
+       // a = 221
+       // b = 5
+       // quot = 44
+       // rem = 1
+       #70 clrn  = 0;
+           start = 0;
+           clk   = 1;
+           a = 32'b00000000000000000000000011011101;
+           b = 32'b00000000000000000000000000000101;
+       #35 clrn  = 1;
+           start = 1;
+
+       #70   
+       $finish;
+    end
 endmodule

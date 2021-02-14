@@ -1,2 +1,2 @@
 #!/usr/bin/env bash
-rm ./*.log ./*.jou
+rm -rf ./*.log ./*.jou

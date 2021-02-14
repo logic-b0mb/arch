@@ -1,0 +1,12 @@
+# compile verilog/system verilog design source files
+verilog xil_defaultlib  \
+"../../../../../wallace8bit/csa.v" \
+"../../../../../wallace8bit/wallace_8x8.v" \
+"../../../../../wallace8bit/wallace_8x8_product.v" \
+"../../../../../wallace8bit/wallace_8x8_product_tb.v" \
+
+# compile glbl module
+verilog xil_defaultlib "glbl.v"
+
+# Do not sort compile order
+nosort

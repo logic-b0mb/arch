@@ -11,37 +11,37 @@ array_multiplier #(
 	.y(y)
 ); 
 
-reg [31:0] xrnd = 1;
-task xorshift32;
-begin
-	xrnd = xrnd ^ (xrnd << 13);
-	xrnd = xrnd ^ (xrnd >> 17);
-	xrnd = xrnd ^ (xrnd <<  5);
-end endtask
-
-integer i;
 initial begin
-	// $dumpfile("array_multiplier_tb.vcd");
-	// $dumpvars(0, array_multiplier_tb);
+    // a = 6
+    // b = 9
+    // prod = 54
+    #10
+    a = 32'b00000000000000000000000000000110;
+    b = 32'b00000000000000000000000000001001;
 
-	for (i = 0; i < 100; i = i+1)
-	begin
-		#10;
+    // a = 14
+    // b = 12
+	// prod = 168
+	#10
+	a = 32'b00000000000000000000000000001110;
+	b = 32'b00000000000000000000000000001100;
+		
+	// a = 10
+	// b = 11
+	// prod = 110
+	#10
+	a = 32'b00000000000000000000000000001010;
+	b = 32'b00000000000000000000000000001011;
 
-		xorshift32;
-		a <= xrnd;
-		xorshift32;
-		b <= xrnd;
-
-		#10;
-
-		$display("%d * %d = %d (%d)", a, b, y, a*b);
-		if (y != a*b) begin
-			$display("ERROR!");
-			$finish;
-		end
-	end
-	$display("PASSED.");
+    // a = 15
+	// b = 15
+	// prod = 225
+	#10
+	a = 32'b00000000000000000000000000001111;
+	b = 32'b00000000000000000000000000001111;
+	
+	#10
+	$finish;
 end
 
 endmodule

@@ -1,0 +1,12 @@
+a =   8, b = 10, quot =  x, rem =  x, start = 0
+a =   8, b = 10, quot = 13, rem =  6, start = 1
+a =   8, b = 10, quot = 13, rem =  6, start = 0
+a = 137, b =  4, quot = 13, rem =  6, start = 0
+a = 137, b =  4, quot =  2, rem =  1, start = 1
+a = 137, b =  4, quot =  2, rem =  1, start = 0
+a = 221, b =  5, quot =  2, rem =  1, start = 0
+a = 221, b =  5, quot = 11, rem =  6, start = 1
+a = 221, b =  5, quot = 11, rem =  6, start = 0
+a = 127, b =  9, quot = 11, rem =  6, start = 0
+a = 127, b =  9, quot = 14, rem =  1, start = 1
+a = 127, b =  9, quot = 14, rem =  1, start = 0
