@@ -17,24 +17,33 @@ module tb_i2f();
         d2 = 0;
         valid = 0;
         
+        #PERIOD;
         d1 = 5;
         d2 = 5;
         valid = 1;
+        
+        #PERIOD valid = 0;
     
-        #(PERIOD/2);
+        #200;
         d1 = 145;
         d2 = 145;
         valid = 1;
         
-        #150;
+        #PERIOD valid = 0;
+        
+        #200;
         d1 = -71;
         d2 = -71;
+        valid = 1;
         
-        #150;
+        #PERIOD valid = 0;
+        
+        #200;
         d1 = 33;
         d2 = 33;
+        valid = 1;
         
-        #150;
+        #200;
         $finish;
     end
 endmodule
