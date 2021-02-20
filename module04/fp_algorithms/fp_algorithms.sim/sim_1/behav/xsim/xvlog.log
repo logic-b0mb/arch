@@ -1,0 +1,18 @@
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/mr-robot/Documents/arch/module04/src/fdiv_newton.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module fdiv_newton
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/mr-robot/Documents/arch/module04/src/newton24.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module newton24
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/mr-robot/Documents/arch/module04/src/shift_to_msb_equ_1.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module shift_to_msb_equ_1
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/mr-robot/Documents/arch/module04/src/wallace_24x26.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module wallace_24x26
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/mr-robot/Documents/arch/module04/src/wallace_26x24.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module wallace_26x24
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/mr-robot/Documents/arch/module04/src/wallace_26x24_product.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module wallace_26x24_product
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/mr-robot/Documents/arch/module04/src/wallace_26x26.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module wallace_26x26
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/mr-robot/Documents/arch/module04/src/wallace_26x26_product.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module wallace_26x26_product
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/mr-robot/Documents/arch/module04/src/fdiv_newton_tb.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module fdiv_newton_tb

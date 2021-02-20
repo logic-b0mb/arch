@@ -1,0 +1,7 @@
+Running: xsim.dir/fdiv_newton_tb_behav/xsimk -simmode gui -wdb fdiv_newton_tb_behav.wdb -simrunnum 0 -socket 33901
+Design successfully loaded
+Design Loading Memory Usage: 36772 KB (Peak: 36772 KB)
+Design Loading CPU Usage: 20 ms
+Simulation completed
+Simulation Memory Usage: 116264 KB (Peak: 176040 KB)
+Simulation CPU Usage: 480 ms

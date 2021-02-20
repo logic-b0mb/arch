@@ -1,0 +1,20 @@
+0.7
+2020.2
+Nov 18 2020
+09:20:35
+/home/mr-robot/Documents/arch/module04/fp_algorithms/fp_algorithms.sim/sim_1/behav/xsim/glbl.v,1605673889,verilog,,,,glbl,,,,,,,,
+/home/mr-robot/Documents/arch/module04/src/csa.v,1613781962,verilog,,/home/mr-robot/Documents/arch/module04/src/fdiv_newton.v,,csa,,,,,,,,
+/home/mr-robot/Documents/arch/module04/src/fadder.v,1613781151,verilog,,/home/mr-robot/Documents/arch/module04/src/fadder_tb.v,,fadder,,,,,,,,
+/home/mr-robot/Documents/arch/module04/src/fadder_tb.v,1613783295,verilog,,,,fadder_tb,,,,,,,,
+/home/mr-robot/Documents/arch/module04/src/fdiv_newton.v,1613781236,verilog,,/home/mr-robot/Documents/arch/module04/src/newton24.v,,fdiv_newton,,,,,,,,
+/home/mr-robot/Documents/arch/module04/src/fdiv_newton_tb.v,1613784071,verilog,,,,fdiv_newton_tb,,,,,,,,
+/home/mr-robot/Documents/arch/module04/src/fmul.v,1613781199,verilog,,/home/mr-robot/Documents/arch/module04/src/wallace_24x24.v,,fmul,,,,,,,,
+/home/mr-robot/Documents/arch/module04/src/fmul_tb.v,1613783799,verilog,,,,fmul_tb,,,,,,,,
+/home/mr-robot/Documents/arch/module04/src/newton24.v,1613781962,verilog,,/home/mr-robot/Documents/arch/module04/src/shift_to_msb_equ_1.v,,newton24,,,,,,,,
+/home/mr-robot/Documents/arch/module04/src/shift_to_msb_equ_1.v,1613781962,verilog,,/home/mr-robot/Documents/arch/module04/src/wallace_24x26.v,,shift_to_msb_equ_1,,,,,,,,
+/home/mr-robot/Documents/arch/module04/src/wallace_24x24.v,1613781962,verilog,,/home/mr-robot/Documents/arch/module04/src/fmul_tb.v,,wallace_24x24,,,,,,,,
+/home/mr-robot/Documents/arch/module04/src/wallace_24x26.v,1613781962,verilog,,/home/mr-robot/Documents/arch/module04/src/wallace_26x24.v,,wallace_24x26,,,,,,,,
+/home/mr-robot/Documents/arch/module04/src/wallace_26x24.v,1613781962,verilog,,/home/mr-robot/Documents/arch/module04/src/wallace_26x24_product.v,,wallace_26x24,,,,,,,,
+/home/mr-robot/Documents/arch/module04/src/wallace_26x24_product.v,1613781962,verilog,,/home/mr-robot/Documents/arch/module04/src/wallace_26x26.v,,wallace_26x24_product,,,,,,,,
+/home/mr-robot/Documents/arch/module04/src/wallace_26x26.v,1613781962,verilog,,/home/mr-robot/Documents/arch/module04/src/wallace_26x26_product.v,,wallace_26x26,,,,,,,,
+/home/mr-robot/Documents/arch/module04/src/wallace_26x26_product.v,1613781962,verilog,,/home/mr-robot/Documents/arch/module04/src/fdiv_newton_tb.v,,wallace_26x26_product,,,,,,,,

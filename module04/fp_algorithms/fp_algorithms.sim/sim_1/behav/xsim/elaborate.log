@@ -1,0 +1,123 @@
+Vivado Simulator 2020.2
+Copyright 1986-1999, 2001-2020 Xilinx, Inc. All Rights Reserved.
+Running: /tools/Xilinx/Vivado/2020.2/bin/unwrapped/lnx64.o/xelab -wto 2428e96babb5418e96e7d04eb510920f --incr --debug typical --relax --mt 8 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot fdiv_newton_tb_behav xil_defaultlib.fdiv_newton_tb xil_defaultlib.glbl -log elaborate.log 
+Using 8 slave threads.
+Starting static elaboration
+Pass Through NonSizing Optimizer
+Completed static elaboration
+Starting simulation data flow analysis
+WARNING: [XSIM 43-4099] "/home/mr-robot/Documents/arch/module04/src/fdiv_newton.v" Line 6. Module fdiv_newton doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "/home/mr-robot/Documents/arch/module04/src/shift_to_msb_equ_1.v" Line 6. Module shift_to_msb_equ_1 doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "/home/mr-robot/Documents/arch/module04/src/shift_to_msb_equ_1.v" Line 6. Module shift_to_msb_equ_1 doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "/home/mr-robot/Documents/arch/module04/src/newton24.v" Line 6. Module newton24 doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "/home/mr-robot/Documents/arch/module04/src/wallace_26x24_product.v" Line 6. Module wallace_26x24_product doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "/home/mr-robot/Documents/arch/module04/src/wallace_26x24.v" Line 6. Module wallace_26x24 doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "/home/mr-robot/Documents/arch/module04/src/csa.v" Line 6. Module csa doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "/home/mr-robot/Documents/arch/module04/src/csa.v" Line 6. Module csa doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "/home/mr-robot/Documents/arch/module04/src/csa.v" Line 6. Module csa doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "/home/mr-robot/Documents/arch/module04/src/csa.v" Line 6. Module csa doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "/home/mr-robot/Documents/arch/module04/src/csa.v" Line 6. Module csa doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "/home/mr-robot/Documents/arch/module04/src/csa.v" Line 6. Module csa doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "/home/mr-robot/Documents/arch/module04/src/csa.v" Line 6. Module csa doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "/home/mr-robot/Documents/arch/module04/src/csa.v" Line 6. Module csa doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "/home/mr-robot/Documents/arch/module04/src/csa.v" Line 6. Module csa doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "/home/mr-robot/Documents/arch/module04/src/csa.v" Line 6. Module csa doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "/home/mr-robot/Documents/arch/module04/src/csa.v" Line 6. Module csa doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "/home/mr-robot/Documents/arch/module04/src/csa.v" Line 6. Module csa doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "/home/mr-robot/Documents/arch/module04/src/csa.v" Line 6. Module csa doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "/home/mr-robot/Documents/arch/module04/src/csa.v" Line 6. Module csa doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "/home/mr-robot/Documents/arch/module04/src/csa.v" Line 6. Module csa doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "/home/mr-robot/Documents/arch/module04/src/csa.v" Line 6. Module csa doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "/home/mr-robot/Documents/arch/module04/src/csa.v" Line 6. Module csa doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "/home/mr-robot/Documents/arch/module04/src/csa.v" Line 6. Module csa doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "/home/mr-robot/Documents/arch/module04/src/csa.v" Line 6. Module csa doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "/home/mr-robot/Documents/arch/module04/src/csa.v" Line 6. Module csa doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "/home/mr-robot/Documents/arch/module04/src/csa.v" Line 6. Module csa doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "/home/mr-robot/Documents/arch/module04/src/csa.v" Line 6. Module csa doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "/home/mr-robot/Documents/arch/module04/src/csa.v" Line 6. Module csa doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "/home/mr-robot/Documents/arch/module04/src/csa.v" Line 6. Module csa doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "/home/mr-robot/Documents/arch/module04/src/csa.v" Line 6. Module csa doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "/home/mr-robot/Documents/arch/module04/src/csa.v" Line 6. Module csa doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "/home/mr-robot/Documents/arch/module04/src/csa.v" Line 6. Module csa doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "/home/mr-robot/Documents/arch/module04/src/csa.v" Line 6. Module csa doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "/home/mr-robot/Documents/arch/module04/src/csa.v" Line 6. Module csa doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "/home/mr-robot/Documents/arch/module04/src/csa.v" Line 6. Module csa doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "/home/mr-robot/Documents/arch/module04/src/csa.v" Line 6. Module csa doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "/home/mr-robot/Documents/arch/module04/src/csa.v" Line 6. Module csa doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "/home/mr-robot/Documents/arch/module04/src/csa.v" Line 6. Module csa doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "/home/mr-robot/Documents/arch/module04/src/csa.v" Line 6. Module csa doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "/home/mr-robot/Documents/arch/module04/src/csa.v" Line 6. Module csa doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "/home/mr-robot/Documents/arch/module04/src/csa.v" Line 6. Module csa doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "/home/mr-robot/Documents/arch/module04/src/csa.v" Line 6. Module csa doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "/home/mr-robot/Documents/arch/module04/src/csa.v" Line 6. Module csa doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "/home/mr-robot/Documents/arch/module04/src/csa.v" Line 6. Module csa doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "/home/mr-robot/Documents/arch/module04/src/csa.v" Line 6. Module csa doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "/home/mr-robot/Documents/arch/module04/src/csa.v" Line 6. Module csa doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "/home/mr-robot/Documents/arch/module04/src/csa.v" Line 6. Module csa doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "/home/mr-robot/Documents/arch/module04/src/csa.v" Line 6. Module csa doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "/home/mr-robot/Documents/arch/module04/src/csa.v" Line 6. Module csa doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "/home/mr-robot/Documents/arch/module04/src/csa.v" Line 6. Module csa doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "/home/mr-robot/Documents/arch/module04/src/csa.v" Line 6. Module csa doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "/home/mr-robot/Documents/arch/module04/src/csa.v" Line 6. Module csa doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "/home/mr-robot/Documents/arch/module04/src/csa.v" Line 6. Module csa doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "/home/mr-robot/Documents/arch/module04/src/csa.v" Line 6. Module csa doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "/home/mr-robot/Documents/arch/module04/src/csa.v" Line 6. Module csa doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "/home/mr-robot/Documents/arch/module04/src/csa.v" Line 6. Module csa doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "/home/mr-robot/Documents/arch/module04/src/csa.v" Line 6. Module csa doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "/home/mr-robot/Documents/arch/module04/src/csa.v" Line 6. Module csa doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "/home/mr-robot/Documents/arch/module04/src/csa.v" Line 6. Module csa doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "/home/mr-robot/Documents/arch/module04/src/csa.v" Line 6. Module csa doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "/home/mr-robot/Documents/arch/module04/src/csa.v" Line 6. Module csa doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "/home/mr-robot/Documents/arch/module04/src/csa.v" Line 6. Module csa doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "/home/mr-robot/Documents/arch/module04/src/csa.v" Line 6. Module csa doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "/home/mr-robot/Documents/arch/module04/src/csa.v" Line 6. Module csa doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "/home/mr-robot/Documents/arch/module04/src/csa.v" Line 6. Module csa doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "/home/mr-robot/Documents/arch/module04/src/csa.v" Line 6. Module csa doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "/home/mr-robot/Documents/arch/module04/src/csa.v" Line 6. Module csa doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "/home/mr-robot/Documents/arch/module04/src/csa.v" Line 6. Module csa doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "/home/mr-robot/Documents/arch/module04/src/csa.v" Line 6. Module csa doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "/home/mr-robot/Documents/arch/module04/src/csa.v" Line 6. Module csa doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "/home/mr-robot/Documents/arch/module04/src/csa.v" Line 6. Module csa doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "/home/mr-robot/Documents/arch/module04/src/csa.v" Line 6. Module csa doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "/home/mr-robot/Documents/arch/module04/src/csa.v" Line 6. Module csa doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "/home/mr-robot/Documents/arch/module04/src/csa.v" Line 6. Module csa doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "/home/mr-robot/Documents/arch/module04/src/csa.v" Line 6. Module csa doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "/home/mr-robot/Documents/arch/module04/src/csa.v" Line 6. Module csa doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "/home/mr-robot/Documents/arch/module04/src/csa.v" Line 6. Module csa doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "/home/mr-robot/Documents/arch/module04/src/csa.v" Line 6. Module csa doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "/home/mr-robot/Documents/arch/module04/src/csa.v" Line 6. Module csa doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "/home/mr-robot/Documents/arch/module04/src/csa.v" Line 6. Module csa doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "/home/mr-robot/Documents/arch/module04/src/csa.v" Line 6. Module csa doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "/home/mr-robot/Documents/arch/module04/src/csa.v" Line 6. Module csa doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "/home/mr-robot/Documents/arch/module04/src/csa.v" Line 6. Module csa doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "/home/mr-robot/Documents/arch/module04/src/csa.v" Line 6. Module csa doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "/home/mr-robot/Documents/arch/module04/src/csa.v" Line 6. Module csa doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "/home/mr-robot/Documents/arch/module04/src/csa.v" Line 6. Module csa doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "/home/mr-robot/Documents/arch/module04/src/csa.v" Line 6. Module csa doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "/home/mr-robot/Documents/arch/module04/src/csa.v" Line 6. Module csa doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "/home/mr-robot/Documents/arch/module04/src/csa.v" Line 6. Module csa doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "/home/mr-robot/Documents/arch/module04/src/csa.v" Line 6. Module csa doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "/home/mr-robot/Documents/arch/module04/src/csa.v" Line 6. Module csa doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "/home/mr-robot/Documents/arch/module04/src/csa.v" Line 6. Module csa doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "/home/mr-robot/Documents/arch/module04/src/csa.v" Line 6. Module csa doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "/home/mr-robot/Documents/arch/module04/src/csa.v" Line 6. Module csa doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "/home/mr-robot/Documents/arch/module04/src/csa.v" Line 6. Module csa doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "/home/mr-robot/Documents/arch/module04/src/csa.v" Line 6. Module csa doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "/home/mr-robot/Documents/arch/module04/src/csa.v" Line 6. Module csa doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "/home/mr-robot/Documents/arch/module04/src/csa.v" Line 6. Module csa doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "/home/mr-robot/Documents/arch/module04/src/csa.v" Line 6. Module csa doesn't have a timescale but at least one module in design has a timescale.
+INFO: [Common 17-14] Message 'XSIM 43-4099' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings.
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling module xil_defaultlib.shift_to_msb_equ_1
+Compiling module xil_defaultlib.csa
+Compiling module xil_defaultlib.wallace_26x24
+Compiling module xil_defaultlib.wallace_26x24_product
+Compiling module xil_defaultlib.wallace_26x26
+Compiling module xil_defaultlib.wallace_26x26_product
+Compiling module xil_defaultlib.wallace_24x26
+Compiling module xil_defaultlib.newton24
+Compiling module xil_defaultlib.fdiv_newton
+Compiling module xil_defaultlib.fdiv_newton_tb
+Compiling module xil_defaultlib.glbl
+Built simulation snapshot fdiv_newton_tb_behav

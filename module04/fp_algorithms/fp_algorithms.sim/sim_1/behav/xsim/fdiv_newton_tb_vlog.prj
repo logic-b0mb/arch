@@ -1,0 +1,18 @@
+# compile verilog/system verilog design source files
+verilog xil_defaultlib  \
+"../../../../../src/csa.v" \
+"../../../../../src/fdiv_newton.v" \
+"../../../../../src/newton24.v" \
+"../../../../../src/shift_to_msb_equ_1.v" \
+"../../../../../src/wallace_24x26.v" \
+"../../../../../src/wallace_26x24.v" \
+"../../../../../src/wallace_26x24_product.v" \
+"../../../../../src/wallace_26x26.v" \
+"../../../../../src/wallace_26x26_product.v" \
+"../../../../../src/fdiv_newton_tb.v" \
+
+# compile glbl module
+verilog xil_defaultlib "glbl.v"
+
+# Do not sort compile order
+nosort
